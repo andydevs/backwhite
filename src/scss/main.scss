@@ -1,5 +1,50 @@
+$desktop-menu-size: 25%;
+$black-color: #333;
+$white-color: #fff;
+
+* {
+    font-family: sans-serif;
+}
+
 .bw-menu {
-    background-color: black;
-    width: 400px;
-    height: 300px;
+    // Positioning
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    width: $desktop-menu-size;
+
+    // Styling
+    background-color: $black-color;
+    color: $white-color;
+
+    .bw-menu-container {
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+
+        margin: 0;
+        margin-left: 8pt;
+        margin-right: 8pt;
+        text-align: right;
+    }
+}
+
+.bw-content {
+    // Positioning
+    position: absolute;
+    top: 0%;
+    left: $desktop-menu-size;
+    right: 0%;
+    bottom: 0%;
+
+    // Styling
+    background-color: $white-color;
+    color: $black-color;
+    box-shadow: -2pt 0pt 8pt darken($black-color, 33%);
+
+    .bw-content-container {
+        margin-left: 8pt;
+        margin-right: 8pt;
+    }
 }
