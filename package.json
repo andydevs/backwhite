@@ -1,0 +1,23 @@
+{
+  "name": "backwhite",
+  "version": "1.0.0",
+  "description": "Backwhite style available as a module",
+  "main": "dist/backwhite.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["style", "backwhite"],
+  "author": "Anshul Kharbanda",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.0",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
