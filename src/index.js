@@ -16,5 +16,4 @@ $(() => {
             $(element).find('.bw-dropdown-list').slideToggle(200)
         })
     })
-
 })

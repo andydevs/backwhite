@@ -10,7 +10,7 @@ a { color: inherit; }
 
 .bw-menu {
     // Positioning
-    position: absolute;
+    position: fixed;
     top: 0%;
     left: 0%;
     bottom: 0%;
@@ -52,6 +52,10 @@ a { color: inherit; }
         li {
             margin: 8pt 0pt;
             list-style: none;
+            &:before {
+                padding: 0;
+                content: none;
+            }
             > a {
                 text-decoration: none;
                 &:hover {
@@ -70,15 +74,17 @@ a { color: inherit; }
 
 .bw-content {
     // Positioning
-    position: absolute;
+    position: fixed;
     top: 0%;
     left: $desktop-menu-size;
     right: 0%;
     bottom: 0%;
+    overflow: scroll;
 
     // Styling
     background-color: $white-color;
     color: $black-color;
+    border-color: $black-color;
     box-shadow: -2pt 0pt 8pt darken($black-color, 33%);
 
     // Container
@@ -93,4 +99,38 @@ h1 {
     font-size: 20pt;
     padding-bottom: 2pt;
     border-bottom: 1px solid;
+}
+
+ul {
+    list-style: none;
+    > li:before {
+        content: "-";
+        margin-right: 8pt;
+    }
+}
+
+ol {
+    list-style: lower-roman;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    padding: 0pt;
+    border-spacing: 0;
+
+    th,td {
+        margin: 0pt;
+        padding: 8pt;
+        text-align: center;
+        border-bottom: 0.5pt solid;
+    }
+
+    th:last-child, td:last-child {
+        border-right: none;
+    }
+
+    tr:last-child > td {
+        border-bottom: none;
+    }
 }
