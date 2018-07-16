@@ -1,98 +1,13 @@
 $desktop-menu-size: 25%;
 $black-color: #333;
 $white-color: #fff;
+$font-family: sans-serif;
 
 * {
-    font-family: sans-serif;
+    font-family: $font-family;
 }
 
 a { color: inherit; }
-
-.bw-menu {
-    // Positioning
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    bottom: 0%;
-    width: $desktop-menu-size;
-
-    // Styling
-    background-color: $black-color;
-    border-color: $white-color;
-    color: $white-color;
-
-    // Align text
-    text-align: right;
-
-    // Container
-    .bw-menu-container {
-        // Positioning
-        position: absolute;
-        top: 50%;
-        left: 0%;
-        right: 0%;
-        transform: translate(0%, -50%);
-
-        // Text align
-        padding: 0pt 8pt;
-        text-align: right;
-    }
-
-    // Title
-    .bw-title {
-        display: block;
-        font-size: 20pt;
-        padding-bottom: 2pt;
-        text-decoration: none;
-        border-bottom: 1px solid;
-    }
-
-    // Links
-    .bw-links {
-        li {
-            margin: 8pt 0pt;
-            list-style: none;
-            &:before {
-                padding: 0;
-                content: none;
-            }
-            > a {
-                text-decoration: none;
-                &:hover {
-                    border-bottom: 1px solid;
-                }
-            }
-        }
-        > li.bw-dropdown {
-            > .bw-dropdown-list {
-                display: none;
-                list-style: none;
-            }
-        }
-    }
-}
-
-.bw-content {
-    // Positioning
-    position: fixed;
-    top: 0%;
-    left: $desktop-menu-size;
-    right: 0%;
-    bottom: 0%;
-    overflow: scroll;
-
-    // Styling
-    background-color: $white-color;
-    color: $black-color;
-    border-color: $black-color;
-    box-shadow: -2pt 0pt 8pt darken($black-color, 33%);
-
-    // Container
-    .bw-content-container {
-        margin-left: 8pt;
-        margin-right: 8pt;
-    }
-}
 
 h1 {
     display: block;
@@ -108,7 +23,6 @@ ul {
         margin-right: 8pt;
     }
 }
-
 ol {
     list-style: lower-roman;
 }
@@ -118,19 +32,19 @@ table {
     table-layout: fixed;
     padding: 0pt;
     border-spacing: 0;
-
     th,td {
         margin: 0pt;
         padding: 8pt;
         text-align: center;
         border-bottom: 0.5pt solid;
     }
-
     th:last-child, td:last-child {
         border-right: none;
     }
-
     tr:last-child > td {
         border-bottom: none;
     }
 }
+
+@import "container";
+@import "row";
