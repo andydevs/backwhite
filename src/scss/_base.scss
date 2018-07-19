@@ -46,6 +46,7 @@ table {
         padding: 8pt;
         text-align: center;
         border-bottom: 0.5pt solid;
+        overflow: hidden;
     }
     th:last-child, td:last-child {
         border-right: none;
