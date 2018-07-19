@@ -6,6 +6,7 @@
  * Author:  Anshul Kharbanda
  * Created: 7 - 15 - 2018
  */
+import 'hamburgers'
 import './scss/main.scss'
 import $ from 'jquery'
 
@@ -20,5 +21,6 @@ $(() => {
     // Menu button handling
     $('.bw-toggle').click(() => {
         $('.bw-content').toggleClass('slided')
+        $('.bw-toggle').toggleClass('is-active')
     })
 })
