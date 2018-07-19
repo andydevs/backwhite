@@ -1,50 +1,19 @@
 $desktop-menu-size: 25%;
+$spacing-unit: 8pt;
+
 $black-color: #333;
 $white-color: #fff;
 $font-family: sans-serif;
 
-* {
-    font-family: $font-family;
-}
+$mobile-width: 426px;
 
-a { color: inherit; }
-
-h1 {
-    display: block;
-    font-size: 20pt;
-    padding-bottom: 2pt;
-    border-bottom: 1px solid;
-}
-
-ul {
-    list-style: none;
-    > li:before {
-        content: "-";
-        margin-right: 8pt;
-    }
-}
-ol {
-    list-style: lower-roman;
-}
-
-table {
-    width: 100%;
-    table-layout: fixed;
-    padding: 0pt;
-    border-spacing: 0;
-    th,td {
-        margin: 0pt;
-        padding: 8pt;
-        text-align: center;
-        border-bottom: 0.5pt solid;
-    }
-    th:last-child, td:last-child {
-        border-right: none;
-    }
-    tr:last-child > td {
-        border-bottom: none;
+// On mobile block
+@mixin on-mobile {
+    @media only screen and (max-width: $mobile-width) {
+        @content;
     }
 }
 
+@import "base";
 @import "container";
 @import "row";

@@ -1,6 +1,7 @@
 .bw-menu {
     // Positioning
     position: fixed;
+    z-index: -1;
     top: 0%;
     left: 0%;
     bottom: 0%;
@@ -13,6 +14,14 @@
 
     // Align text
     text-align: right;
+
+    @include on-mobile {
+        top: 0%;
+        left: 0%;
+        bottom: 0%;
+        right: 0%;
+        width: 100%;
+    };
 
     // Container
     .bw-menu-container {
@@ -77,9 +86,33 @@
     border-color: $black-color;
     box-shadow: -2pt 0pt 8pt darken($black-color, 33%);
 
+    // Sliding effect
+    transition: transform 0.5s ease-in-out;
+    &.slided {
+        transform: none;
+        @include on-mobile {
+            transform: translate(100%, 0%);
+        };
+    }
+
+    @include on-mobile {
+        top: 0%;
+        left: 0%;
+        bottom: 0%;
+        right: 0%;
+    };
+
     // Container
     .bw-content-container {
         margin-left: 8pt;
         margin-right: 8pt;
     }
+}
+
+.bw-toggle {
+    // Positioning
+    position: fixed;
+    z-index: 1;
+    bottom: $spacing-unit*2;
+    right: $spacing-unit*2;
 }

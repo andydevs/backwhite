@@ -16,4 +16,9 @@ $(() => {
             $(element).find('.bw-dropdown-list').slideToggle(200)
         })
     })
+
+    // Menu button handling
+    $('.bw-toggle').click(() => {
+        $('.bw-content').toggleClass('slided')
+    })
 })
