@@ -1,13 +1,28 @@
+// Positioning
 $desktop-menu-size: 25%;
 $spacing-unit: 8pt;
 
+// Normal font size
+$mega-font-size: 20pt;
+$large-font-size: 20pt;
+$medium-font-size: 14pt;
+$normal-font-size: 8pt;
+
+// Responsive font size
+$mega-font-size-m: 40pt;
+$large-font-size-m: 30pt;
+$medium-font-size-m: 20pt;
+$normal-font-size-m: 14pt;
+
+// Colors
 $black-color: #333;
 $white-color: #fff;
+
+// Font
 $font-family: sans-serif;
 
+// Responsive block
 $mobile-width: 426px;
-
-// On mobile block
 @mixin on-mobile {
     @media only screen and (max-width: $mobile-width) {
         @content;

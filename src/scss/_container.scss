@@ -40,16 +40,23 @@
     // Title
     .bw-title {
         display: block;
-        font-size: 20pt;
         padding-bottom: 2pt;
         text-decoration: none;
         border-bottom: 1px solid;
+        font-size: $mega-font-size;
+        @include on-mobile {
+            font-size: $mega-font-size-m;
+        };
     }
 
     // Links
     .bw-links {
         li {
             margin: 8pt 0pt;
+            @include on-mobile {
+                margin: 16pt 0pt;
+            };
+
             list-style: none;
             &:before {
                 padding: 0;
@@ -60,6 +67,10 @@
                 &:hover {
                     border-bottom: 1px solid;
                 }
+                font-size: $normal-font-size;
+                @include on-mobile {
+                    font-size: $medium-font-size-m;
+                };
             }
         }
         > li.bw-dropdown {
@@ -80,26 +91,29 @@
     bottom: 0%;
     overflow: scroll;
 
+    // No sliding effect
+    transition: none;
+    &.slided { transform: none; }
+
     // Styling
     background-color: $white-color;
     color: $black-color;
     border-color: $black-color;
     box-shadow: -2pt 0pt 8pt darken($black-color, 33%);
 
-    // Sliding effect
-    transition: transform 0.5s ease-in-out;
-    &.slided {
-        transform: none;
-        @include on-mobile {
-            transform: translate(100%, 0%);
-        };
-    }
-
+    // Mobile
     @include on-mobile {
+        // Positioning
         top: 0%;
         left: 0%;
         bottom: 0%;
         right: 0%;
+
+        // Sliding effect
+        transition: transform 0.5s ease-in-out;
+        &.slided {
+            transform: translateX(100%);
+        }
     };
 
     // Container
