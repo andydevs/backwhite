@@ -3,18 +3,77 @@
     grid-template-rows: 1fr;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 8pt;
-    grid-row-gap: 8pt;
 
-   .bw-col-1 { grid-column-start: span 1; }
-   .bw-col-2 { grid-column-start: span 2; }
-   .bw-col-3 { grid-column-start: span 3; }
-   .bw-col-4 { grid-column-start: span 4; }
-   .bw-col-5 { grid-column-start: span 5; }
-   .bw-col-6 { grid-column-start: span 6; }
-   .bw-col-7 { grid-column-start: span 7; }
-   .bw-col-8 { grid-column-start: span 8; }
-   .bw-col-9 { grid-column-start: span 9; }
-   .bw-col-10 { grid-column-start: span 10; }
-   .bw-col-11 { grid-column-start: span 11; }
-   .bw-col-12 { grid-column-start: span 12; }
+   .bw-col-1 {
+       grid-column-start: span 1;
+       @include on-mobile {
+           grid-column-start: span 12;
+       };
+   }
+   .bw-col-2 {
+       grid-column-start: span 2;
+       @include on-mobile {
+           grid-column-start: span 12;
+       };
+   }
+   .bw-col-3 {
+       grid-column-start: span 3;
+       @include on-mobile {
+           grid-column-start: span 12;
+       };
+   }
+   .bw-col-4 {
+       grid-column-start: span 4;
+       @include on-mobile {
+           grid-column-start: span 12;
+       };
+   }
+   .bw-col-5 {
+       grid-column-start: span 5;
+       @include on-mobile {
+           grid-column-start: span 12;
+       };
+   }
+   .bw-col-6 {
+       grid-column-start: span 6;
+       @include on-mobile {
+           grid-column-start: span 12;
+       };
+   }
+   .bw-col-7 {
+       grid-column-start: span 7;
+       @include on-mobile {
+           grid-column-start: span 12;
+       };
+   }
+   .bw-col-8 {
+       grid-column-start: span 8;
+       @include on-mobile {
+           grid-column-start: span 12;
+       };
+   }
+   .bw-col-9 {
+       grid-column-start: span 9;
+       @include on-mobile {
+           grid-column-start: span 12;
+       };
+   }
+   .bw-col-10 {
+       grid-column-start: span 10;
+       @include on-mobile {
+           grid-column-start: span 12;
+       };
+   }
+   .bw-col-11 {
+       grid-column-start: span 11;
+       @include on-mobile {
+           grid-column-start: span 12;
+       };
+   }
+   .bw-col-12 {
+       grid-column-start: span 12;
+       @include on-mobile {
+           grid-column-start: span 12;
+       };
+   }
 }
