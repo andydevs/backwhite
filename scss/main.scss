@@ -1,12 +1,19 @@
 // Positioning
-$desktop-menu-size: 25%;
+$desktop-menu-size: 30%;
+$desktop-menu-size-l: 20%;
 $spacing-unit: 8pt;
 
+// Large font size
+$mega-font-size: 30pt;
+$large-font-size: 25pt;
+$medium-font-size: 16pt;
+$normal-font-size: 14pt;
+
 // Normal font size
-$mega-font-size: 20pt;
-$large-font-size: 20pt;
-$medium-font-size: 14pt;
-$normal-font-size: 8pt;
+$mega-font-size: 30pt;
+$large-font-size: 25pt;
+$medium-font-size: 16pt;
+$normal-font-size: 14pt;
 
 // Responsive font size
 $mega-font-size-m: 40pt;
@@ -21,10 +28,16 @@ $white-color: #fff;
 // Font
 $font-family: sans-serif;
 
-// Responsive block
-$mobile-width: 426px;
+// Responsive blocks
+$mobile-width: 760px;
 @mixin on-mobile {
     @media only screen and (max-width: $mobile-width) {
+        @content;
+    }
+}
+$max-width: 1200px;
+@mixin on-max {
+    @media only screen and (min-width: $max-width) {
         @content;
     }
 }

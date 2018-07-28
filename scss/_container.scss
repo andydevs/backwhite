@@ -15,6 +15,9 @@
     // Align text
     text-align: right;
 
+    @include on-max {
+        width: $desktop-menu-size-l;
+    };
     @include on-mobile {
         top: 0%;
         left: 0%;
@@ -102,6 +105,9 @@
     box-shadow: -2pt 0pt 8pt darken($black-color, 33%);
 
     // Mobile
+    @include on-max {
+        left: $desktop-menu-size-l;
+    };
     @include on-mobile {
         // Positioning
         top: 0%;

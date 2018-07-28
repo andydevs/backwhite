@@ -701,8 +701,8 @@
 
 * {
   font-family: sans-serif;
-  font-size: 8pt; }
-  @media only screen and (max-width: 426px) {
+  font-size: 14pt; }
+  @media only screen and (max-width: 760px) {
     * {
       font-size: 14pt; } }
 
@@ -713,14 +713,14 @@ h1 {
   display: block;
   padding-bottom: 2pt;
   border-bottom: 1px solid;
-  font-size: 20pt; }
-  @media only screen and (max-width: 426px) {
+  font-size: 25pt; }
+  @media only screen and (max-width: 760px) {
     h1 {
       font-size: 30pt; } }
 
 h2 {
-  font-size: 14pt; }
-  @media only screen and (max-width: 426px) {
+  font-size: 16pt; }
+  @media only screen and (max-width: 760px) {
     h2 {
       font-size: 20pt; } }
 
@@ -755,12 +755,15 @@ table {
   top: 0%;
   left: 0%;
   bottom: 0%;
-  width: 25%;
+  width: 30%;
   background-color: #333;
   border-color: #fff;
   color: #fff;
   text-align: right; }
-  @media only screen and (max-width: 426px) {
+  @media only screen and (min-width: 1200px) {
+    .bw-menu {
+      width: 20%; } }
+  @media only screen and (max-width: 760px) {
     .bw-menu {
       top: 0%;
       left: 0%;
@@ -780,14 +783,14 @@ table {
     padding-bottom: 2pt;
     text-decoration: none;
     border-bottom: 1px solid;
-    font-size: 20pt; }
-    @media only screen and (max-width: 426px) {
+    font-size: 30pt; }
+    @media only screen and (max-width: 760px) {
       .bw-menu .bw-title {
         font-size: 40pt; } }
   .bw-menu .bw-links li {
     margin: 8pt 0pt;
     list-style: none; }
-    @media only screen and (max-width: 426px) {
+    @media only screen and (max-width: 760px) {
       .bw-menu .bw-links li {
         margin: 16pt 0pt; } }
     .bw-menu .bw-links li:before {
@@ -795,10 +798,10 @@ table {
       content: none; }
     .bw-menu .bw-links li > a {
       text-decoration: none;
-      font-size: 8pt; }
+      font-size: 14pt; }
       .bw-menu .bw-links li > a:hover {
         border-bottom: 1px solid; }
-      @media only screen and (max-width: 426px) {
+      @media only screen and (max-width: 760px) {
         .bw-menu .bw-links li > a {
           font-size: 20pt; } }
   .bw-menu .bw-links > li.bw-dropdown > .bw-dropdown-list {
@@ -808,7 +811,7 @@ table {
 .bw-content {
   position: fixed;
   top: 0%;
-  left: 25%;
+  left: 30%;
   right: 0%;
   bottom: 0%;
   overflow: scroll;
@@ -819,7 +822,10 @@ table {
   box-shadow: -2pt 0pt 8pt black; }
   .bw-content.slided {
     transform: none; }
-  @media only screen and (max-width: 426px) {
+  @media only screen and (min-width: 1200px) {
+    .bw-content {
+      left: 20%; } }
+  @media only screen and (max-width: 760px) {
     .bw-content {
       top: 0%;
       left: 0%;
@@ -839,7 +845,7 @@ table {
   right: 16pt;
   background-color: #333;
   display: none; }
-  @media only screen and (max-width: 426px) {
+  @media only screen and (max-width: 760px) {
     .bw-toggle {
       display: block; } }
 
@@ -849,62 +855,62 @@ table {
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 8pt; }
   .bw-row .bw-col-1 {
-    grid-column-start: span 1; }
-    @media only screen and (max-width: 426px) {
+    grid-column-start: span 12; }
+    @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-1 {
-        grid-column-start: span 12; } }
+        grid-column-start: span 1; } }
   .bw-row .bw-col-2 {
-    grid-column-start: span 2; }
-    @media only screen and (max-width: 426px) {
+    grid-column-start: span 12; }
+    @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-2 {
-        grid-column-start: span 12; } }
+        grid-column-start: span 2; } }
   .bw-row .bw-col-3 {
-    grid-column-start: span 3; }
-    @media only screen and (max-width: 426px) {
+    grid-column-start: span 12; }
+    @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-3 {
-        grid-column-start: span 12; } }
+        grid-column-start: span 3; } }
   .bw-row .bw-col-4 {
-    grid-column-start: span 4; }
-    @media only screen and (max-width: 426px) {
+    grid-column-start: span 12; }
+    @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-4 {
-        grid-column-start: span 12; } }
+        grid-column-start: span 4; } }
   .bw-row .bw-col-5 {
-    grid-column-start: span 5; }
-    @media only screen and (max-width: 426px) {
+    grid-column-start: span 12; }
+    @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-5 {
-        grid-column-start: span 12; } }
+        grid-column-start: span 5; } }
   .bw-row .bw-col-6 {
-    grid-column-start: span 6; }
-    @media only screen and (max-width: 426px) {
+    grid-column-start: span 12; }
+    @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-6 {
-        grid-column-start: span 12; } }
+        grid-column-start: span 6; } }
   .bw-row .bw-col-7 {
-    grid-column-start: span 7; }
-    @media only screen and (max-width: 426px) {
+    grid-column-start: span 12; }
+    @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-7 {
-        grid-column-start: span 12; } }
+        grid-column-start: span 7; } }
   .bw-row .bw-col-8 {
-    grid-column-start: span 8; }
-    @media only screen and (max-width: 426px) {
+    grid-column-start: span 12; }
+    @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-8 {
-        grid-column-start: span 12; } }
+        grid-column-start: span 8; } }
   .bw-row .bw-col-9 {
-    grid-column-start: span 9; }
-    @media only screen and (max-width: 426px) {
+    grid-column-start: span 12; }
+    @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-9 {
-        grid-column-start: span 12; } }
+        grid-column-start: span 9; } }
   .bw-row .bw-col-10 {
-    grid-column-start: span 10; }
-    @media only screen and (max-width: 426px) {
+    grid-column-start: span 12; }
+    @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-10 {
-        grid-column-start: span 12; } }
+        grid-column-start: span 10; } }
   .bw-row .bw-col-11 {
-    grid-column-start: span 11; }
-    @media only screen and (max-width: 426px) {
+    grid-column-start: span 12; }
+    @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-11 {
-        grid-column-start: span 12; } }
+        grid-column-start: span 11; } }
   .bw-row .bw-col-12 {
     grid-column-start: span 12; }
-    @media only screen and (max-width: 426px) {
+    @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-12 {
         grid-column-start: span 12; } }
