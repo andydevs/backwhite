@@ -6,8 +6,6 @@
  * Author:  Anshul Kharbanda
  * Created: 7 - 15 - 2018
  */
-import 'hamburgers'
-import './scss/main.scss'
 import $ from 'jquery'
 
 $(() => {

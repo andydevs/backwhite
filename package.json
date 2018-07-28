@@ -1,12 +1,10 @@
 {
   "name": "backwhite",
   "version": "1.0.0",
-  "description": "Backwhite style available as a module",
-  "main": "dist/backwhite.js",
+  "description": "Backwhite style",
+  "main": "dist/js/backwhite.js",
   "scripts": {
-    "webpack": "webpack",
-    "devserver": "webpack-dev-server --watch --colors",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "grunt"
   },
   "keywords": [
     "style",
@@ -15,15 +13,12 @@
   "author": "Anshul Kharbanda",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "css-loader": "^1.0.0",
-    "node-sass": "^4.9.2",
-    "sass-loader": "^7.0.3",
-    "style-loader": "^0.21.0",
-    "webpack": "^4.16.0",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "grunt": "^1.0.3",
+    "grunt-babel": "^8.0.0-beta.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-node-sass": "^1.0.1",
+    "node-sass": "^4.9.2"
   }
 }
