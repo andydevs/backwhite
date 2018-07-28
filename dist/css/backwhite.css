@@ -837,7 +837,11 @@ table {
   z-index: 1;
   bottom: 16pt;
   right: 16pt;
-  background-color: #333; }
+  background-color: #333;
+  display: none; }
+  @media only screen and (max-width: 426px) {
+    .bw-toggle {
+      display: block; } }
 
 .bw-row {
   display: grid;

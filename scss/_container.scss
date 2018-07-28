@@ -130,4 +130,9 @@
     bottom: $spacing-unit*2;
     right: $spacing-unit*2;
     background-color: $black-color;
+    display: none;
+
+    @include on-mobile {
+        display: block;
+    };
 }
