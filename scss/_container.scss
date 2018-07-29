@@ -153,3 +153,9 @@
         display: block;
     };
 }
+
+.bw-scroll-wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}

@@ -856,6 +856,11 @@ table {
     .bw-toggle {
       display: block; } }
 
+.bw-scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto; }
+
 .bw-row {
   display: grid;
   grid-template-rows: 1fr;

@@ -43,7 +43,7 @@ table {
     border-spacing: 0;
     th,td {
         margin: 0pt;
-        padding: 8pt;
+        padding: $spacing-unit;
         text-align: center;
         border-bottom: 0.5pt solid;
         overflow: hidden;
