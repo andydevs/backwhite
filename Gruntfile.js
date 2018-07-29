@@ -6,12 +6,14 @@
  * Author:  Anshul Kharbanda
  * Created: 7 - 15 - 2018
  */
+const sass = require('node-sass');
+
 module.exports = function(grunt) {
     grunt.initConfig({
         babel: {
             options: {
-                sourceMap: true,
-                presets: ['@babel/preset-env']
+                presets: ['@babel/preset-env'],
+                sourceMap: true
             },
             dist: {
                 src: ['js/**/*.js'],
@@ -19,16 +21,21 @@ module.exports = function(grunt) {
             }
         },
         sass: {
+            options: {
+                implementation: sass,
+                sourceMap: true
+            },
             dist: {
-                src: 'scss/main.scss',
-                dest: 'dist/css/backwhite.css'
+                files: {
+                    'dist/css/backwhite.css': 'scss/main.scss'
+                }
             }
         }
     })
 
     // Load tasks
     grunt.loadNpmTasks('grunt-babel')
-    grunt.loadNpmTasks('grunt-node-sass')
+    grunt.loadNpmTasks('grunt-sass')
 
     // Default task
     grunt.registerTask('default', ['babel', 'sass'])

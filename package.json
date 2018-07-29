@@ -18,7 +18,11 @@
     "grunt": "^1.0.3",
     "grunt-babel": "^8.0.0-beta.0",
     "grunt-cli": "^1.2.0",
-    "grunt-node-sass": "^1.0.1",
+    "grunt-sass": "^3.0.1",
     "node-sass": "^4.9.2"
+  },
+  "dependencies": {
+    "hamburgers": "^0.9.3",
+    "jquery": "^3.3.1"
   }
 }
