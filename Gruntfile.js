@@ -26,9 +26,8 @@ module.exports = function(grunt) {
                 sourceMap: true
             },
             dist: {
-                files: {
-                    'dist/css/backwhite.css': 'scss/main.scss'
-                }
+                src: ['scss/main.scss'],
+                dest: 'dist/css/backwhite.css'
             }
         },
         watch: {
