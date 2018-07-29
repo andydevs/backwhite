@@ -96,7 +96,7 @@
 
     // No sliding effect
     transition: none;
-    &.slided { transform: none; }
+    &.is-slided { transform: none; }
 
     // Styling
     background-color: $white-color;
@@ -117,7 +117,7 @@
 
         // Sliding effect
         transition: transform 0.5s ease-in-out;
-        &.slided {
+        &.is-slided {
             transform: translateX(100%);
         }
     };
@@ -137,6 +137,17 @@
     right: $spacing-unit*2;
     background-color: $black-color;
     display: none;
+    border-radius: 16pt;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        background-color: $white-color;
+    }
 
     @include on-mobile {
         display: block;

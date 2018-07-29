@@ -17,7 +17,8 @@ $(function () {
   }); // Menu button handling
 
   $('.bw-toggle').click(function () {
-    $('.bw-content').toggleClass('slided');
+    console.log('clicked');
+    $('.bw-content').toggleClass('is-slided');
     $('.bw-toggle').toggleClass('is-active');
   });
 });
