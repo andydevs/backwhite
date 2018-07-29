@@ -4,28 +4,29 @@
   "description": "Backwhite style",
   "main": "dist/js/backwhite.js",
   "scripts": {
-      "postinstall": "npm run build",
-      "build": "grunt build",
-      "build:watch": "grunt build:watch"
+    "postinstall": "npm run build",
+    "build": "grunt build",
+    "build:watch": "grunt build:watch"
   },
   "keywords": [
-      "style",
-      "backwhite"
+    "style",
+    "backwhite"
   ],
   "author": "Anshul Kharbanda",
   "license": "MIT",
   "devDependencies": {
-      "@babel/core": "^7.0.0-beta.54",
-      "@babel/preset-env": "^7.0.0-beta.54",
-      "grunt": "^1.0.3",
-      "grunt-babel": "^8.0.0-beta.0",
-      "grunt-cli": "^1.2.0",
-      "grunt-contrib-watch": "^1.1.0",
-      "grunt-sass": "^3.0.1",
-      "node-sass": "^4.9.2"
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "grunt": "^1.0.3",
+    "grunt-babel": "^8.0.0-beta.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-coffee": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.0.1",
+    "node-sass": "^4.9.2"
   },
   "dependencies": {
-      "hamburgers": "^0.9.3",
-      "jquery": "^3.3.1"
+    "hamburgers": "^0.9.3",
+    "jquery": "^3.3.1"
   }
 }

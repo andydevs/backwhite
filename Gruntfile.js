@@ -10,13 +10,9 @@ const sass = require('node-sass');
 
 module.exports = function(grunt) {
     grunt.initConfig({
-        babel: {
-            options: {
-                presets: ['@babel/preset-env'],
-                sourceMap: true
-            },
-            dist: {
-                src: ['js/**/*.js'],
+        coffee: {
+            compile: {
+                src: ['coffee/**/*.coffee'],
                 dest: 'dist/js/backwhite.js'
             }
         },
@@ -38,9 +34,9 @@ module.exports = function(grunt) {
                 files: ['scss/**/*.scss'],
                 tasks: ['sass']
             },
-            js: {
-                files: ['js/**/*.js'],
-                tasks: ['babel']
+            coffee: {
+                files: ['coffee/**/*.coffee'],
+                tasks: ['coffee']
             }
         }
     })
@@ -48,10 +44,11 @@ module.exports = function(grunt) {
     // Load tasks
     grunt.loadNpmTasks('grunt-babel')
     grunt.loadNpmTasks('grunt-sass')
+    grunt.loadNpmTasks('grunt-contrib-coffee')
     grunt.loadNpmTasks('grunt-contrib-watch')
 
     // Register tasks
-    grunt.registerTask('build', ['babel', 'sass'])
+    grunt.registerTask('build', ['coffee', 'sass'])
     grunt.registerTask('build:watch', ['build', 'watch'])
     grunt.registerTask('default', ['build'])
 }
