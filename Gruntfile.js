@@ -30,13 +30,26 @@ module.exports = function(grunt) {
                     'dist/css/backwhite.css': 'scss/main.scss'
                 }
             }
+        },
+        watch: {
+            scss: {
+                files: ['scss/**/*.scss'],
+                tasks: ['sass']
+            },
+            js: {
+                files: ['js/**/*.js'],
+                tasks: ['babel']
+            }
         }
     })
 
     // Load tasks
     grunt.loadNpmTasks('grunt-babel')
     grunt.loadNpmTasks('grunt-sass')
+    grunt.loadNpmTasks('grunt-contrib-watch')
 
-    // Default task
-    grunt.registerTask('default', ['babel', 'sass'])
+    // Register tasks
+    grunt.registerTask('build', ['babel', 'sass'])
+    grunt.registerTask('build:watch', ['build', 'watch'])
+    grunt.registerTask('default', ['build'])
 }

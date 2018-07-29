@@ -16,7 +16,6 @@ $(() => {
 
     // Menu button handling
     $('.bw-toggle').click(() => {
-        console.log('clicked')
         $('.bw-content').toggleClass('is-slided')
         $('.bw-toggle').toggleClass('is-active')
     })
