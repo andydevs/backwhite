@@ -19,10 +19,10 @@ $ ->
     $('table').each (_, table) ->
         # Find longest
         longest = $(table)
-            .find('th,td')
-            .map((_, cell) -> $(cell).text())
+            .find 'th,td'
+            .map (_, cell) -> $(cell).text()
             .get()
-            .reduce((a, b) -> a.length >= b.length ? a : b)
+            .reduce (a, b) -> if a.length >= b.length then a else b
 
         # Get length of longest
         font = $(table).find('td').css 'font'

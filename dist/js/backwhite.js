@@ -24,10 +24,11 @@
       longest = $(table).find('th,td').map(function(_, cell) {
         return $(cell).text();
       }).get().reduce(function(a, b) {
-        var ref;
-        return (ref = a.length >= b.length) != null ? ref : {
-          a: b
-        };
+        if (a.length >= b.length) {
+          return a;
+        } else {
+          return b;
+        }
       });
       // Get length of longest
       font = $(table).find('td').css('font');
