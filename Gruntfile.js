@@ -22,7 +22,7 @@ module.exports = function(grunt) {
                 sourceMap: true
             },
             dist: {
-                src: ['scss/main.scss'],
+                src: ['scss/backwhite.scss'],
                 dest: 'dist/css/backwhite.css'
             }
         },
