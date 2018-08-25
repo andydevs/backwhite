@@ -3,7 +3,7 @@
   z-index: 1;
   bottom: 16pt;
   right: 16pt;
-  background-color: #333;
+  background-color: #003;
   border: none;
   display: none;
   padding: 10pt;
@@ -53,6 +53,9 @@
 a {
   color: inherit; }
 
+h1, h2, h3, h4 {
+  color: #003; }
+
 h1 {
   display: block;
   padding-bottom: 2pt;
@@ -82,6 +85,8 @@ table {
   table-layout: fixed;
   padding: 0pt;
   border-spacing: 0; }
+  table th {
+    color: #003; }
   table th, table td {
     margin: 0pt;
     padding: 8pt;
@@ -100,7 +105,7 @@ table {
   left: 0%;
   bottom: 0%;
   width: 30%;
-  background-color: #333;
+  background-color: #003;
   border-color: #fff;
   color: #fff;
   text-align: right; }
@@ -165,7 +170,7 @@ table {
   transition: none;
   background-color: #fff;
   color: #333;
-  border-color: #333;
+  border-color: #003;
   box-shadow: -2pt 0pt 8pt black; }
   .bw-content.slided {
     transform: none; }

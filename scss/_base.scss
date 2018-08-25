@@ -9,6 +9,9 @@
 
 a { color: inherit; }
 
+h1,h2,h3,h4 {
+    color: $back-color;
+}
 h1 {
     display: block;
     padding-bottom: 2pt;
@@ -41,6 +44,9 @@ table {
     table-layout: fixed;
     padding: 0pt;
     border-spacing: 0;
+    th {
+        color: $back-color;
+    }
     th,td {
         margin: 0pt;
         padding: $spacing-unit;
