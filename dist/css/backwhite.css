@@ -1,12 +1,15 @@
 .bw-toggle {
   position: fixed;
   z-index: 1;
-  bottom: 24pt;
-  right: 24pt;
+  bottom: 16pt;
+  right: 16pt;
   background-color: #333;
   border: none;
   display: none;
-  padding: 10pt; }
+  padding: 10pt;
+  border-radius: 5pt;
+  box-shadow: 0px 1px 8px 4px #ababab;
+  transition: 0.5s ease-in-out; }
   .bw-toggle .bw-hamburger {
     position: relative;
     display: block;
@@ -26,14 +29,16 @@
         top: 50%; }
       .bw-toggle .bw-hamburger span:nth-child(3) {
         top: 90%; }
-  .bw-toggle.active .bw-hamburger span:nth-child(1), .bw-toggle.active .bw-hamburger span:nth-child(3) {
-    width: 75%; }
-  .bw-toggle.active .bw-hamburger span:nth-child(2) {
-    opacity: 0; }
-  .bw-toggle.active .bw-hamburger span:nth-child(1) {
-    transform: rotate(45deg) translateX(20%); }
-  .bw-toggle.active .bw-hamburger span:nth-child(3) {
-    transform: rotate(-45deg) translateX(20%); }
+  .bw-toggle.active {
+    box-shadow: none; }
+    .bw-toggle.active .bw-hamburger span:nth-child(1), .bw-toggle.active .bw-hamburger span:nth-child(3) {
+      width: 75%; }
+    .bw-toggle.active .bw-hamburger span:nth-child(2) {
+      opacity: 0; }
+    .bw-toggle.active .bw-hamburger span:nth-child(1) {
+      transform: rotate(45deg) translateX(20%); }
+    .bw-toggle.active .bw-hamburger span:nth-child(3) {
+      transform: rotate(-45deg) translateX(20%); }
   @media only screen and (max-width: 760px) {
     .bw-toggle {
       display: block; } }
