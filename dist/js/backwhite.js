@@ -7,9 +7,9 @@
   // Created: 7 - 15 - 2018
   $(function() {
     // Dropdown handling
-    $('.bw-dropdown').each(function(_, element) {
-      return $(element).find('.bw-dropdown-link').click(function() {
-        return $(element).find('.bw-dropdown-list').slideToggle(200);
+    $('.bw-dropdown').each(function() {
+      return $(this).find('.bw-dropdown-link').click(() => {
+        return $(this).find('.bw-dropdown-list').slideToggle(200);
       });
     });
     // Menu button handling
@@ -18,11 +18,11 @@
       return $('.bw-toggle').toggleClass('active');
     });
     // Fix table lengths
-    return $('table').each(function(_, table) {
+    return $('table').each(function() {
       var canvas, ctx, font, length, longest;
       // Find longest
-      longest = $(table).find('th,td').map(function(_, cell) {
-        return $(cell).text();
+      longest = $(this).find('th,td').map(function() {
+        return $(this).text();
       }).get().reduce(function(a, b) {
         if (a.length >= b.length) {
           return a;
@@ -31,13 +31,13 @@
         }
       });
       // Get length of longest
-      font = $(table).find('td').css('font');
+      font = $(this).find('td').css('font');
       canvas = document.createElement('canvas');
       ctx = canvas.getContext('2d');
       ctx.font = font;
       length = ctx.measureText(longest).width;
       // Set table cell lengths to length of longest
-      return $(table).find('th,td').css('width', length);
+      return $(this).find('th,td').css('width', length);
     });
   });
 
