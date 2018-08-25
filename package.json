@@ -26,7 +26,6 @@
     "node-sass": "^4.9.2"
   },
   "dependencies": {
-    "hamburgers": "^0.9.3",
     "jquery": "^3.3.1"
   }
 }

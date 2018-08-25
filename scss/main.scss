@@ -42,7 +42,7 @@ $max-width: 1200px;
     }
 }
 
-@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+@import "toggler";
 @import "base";
 @import "container";
 @import "row";

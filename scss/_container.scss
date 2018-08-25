@@ -129,31 +129,6 @@
     }
 }
 
-.bw-toggle {
-    // Positioning
-    position: fixed;
-    z-index: 1;
-    bottom: $spacing-unit*2;
-    right: $spacing-unit*2;
-    background-color: $black-color;
-    display: none;
-    border-radius: 16pt;
-
-    &:hover {
-        opacity: 1;
-    }
-
-    .hamburger-inner,
-    .hamburger-inner::before,
-    .hamburger-inner::after {
-        background-color: $white-color;
-    }
-
-    @include on-mobile {
-        display: block;
-    };
-}
-
 .bw-scroll-wrapper {
     display: block;
     width: 100%;
