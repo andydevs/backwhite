@@ -122,6 +122,9 @@ table {
     transform: translate(0%, -50%);
     padding: 0pt 8pt;
     text-align: right; }
+    @media only screen and (max-width: 760px) {
+      .bw-menu .bw-menu-container {
+        padding: 0pt 16pt; } }
   .bw-menu .bw-title {
     display: block;
     padding-bottom: 2pt;
