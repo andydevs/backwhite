@@ -96,7 +96,7 @@
 
     // No sliding effect
     transition: none;
-    &.is-slided { transform: none; }
+    &.slided { transform: none; }
 
     // Styling
     background-color: $white-color;
@@ -117,7 +117,7 @@
 
         // Sliding effect
         transition: transform 0.5s ease-in-out;
-        &.is-slided {
+        &.slided {
             transform: translateX(100%);
         }
     };

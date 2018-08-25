@@ -12,8 +12,8 @@ $ ->
 
     # Menu button handling
     $('.bw-toggle').click ->
-        $('.bw-content').toggleClass 'is-slided'
-        $('.bw-toggle').toggleClass 'is-active'
+        $('.bw-content').toggleClass 'slided'
+        $('.bw-toggle').toggleClass 'active'
 
     # Fix table lengths
     $('table').each (_, table) ->

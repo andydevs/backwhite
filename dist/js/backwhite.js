@@ -14,8 +14,8 @@
     });
     // Menu button handling
     $('.bw-toggle').click(function() {
-      $('.bw-content').toggleClass('is-slided');
-      return $('.bw-toggle').toggleClass('is-active');
+      $('.bw-content').toggleClass('slided');
+      return $('.bw-toggle').toggleClass('active');
     });
     // Fix table lengths
     return $('table').each(function(_, table) {
