@@ -176,6 +176,7 @@ table {
   right: 0%;
   bottom: 0%;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   transition: none;
   background-color: #fff;
   color: #333;
@@ -202,7 +203,7 @@ table {
 .bw-horiz-scroll-wrapper {
   display: block;
   width: 100%;
-  overflow-x: auto; }
+  overflow-x: scroll; }
 
 .bw-horiz-rule {
   display: block;
