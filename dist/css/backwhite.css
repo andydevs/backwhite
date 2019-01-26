@@ -45,7 +45,7 @@
 
 * {
   font-family: sans-serif;
-  font-size: 14pt; }
+  font-size: 11pt; }
   @media only screen and (max-width: 760px) {
     * {
       font-size: 11pt; } }
@@ -60,13 +60,13 @@ h1 {
   display: block;
   padding-bottom: 2pt;
   border-bottom: 1px solid;
-  font-size: 25pt; }
+  font-size: 20pt; }
   @media only screen and (max-width: 760px) {
     h1 {
       font-size: 20pt; } }
 
 h2 {
-  font-size: 16pt; }
+  font-size: 14pt; }
   @media only screen and (max-width: 760px) {
     h2 {
       font-size: 14pt; } }
@@ -150,7 +150,7 @@ table {
       content: none; }
     .bw-menu .bw-links li > a {
       text-decoration: none;
-      font-size: 14pt; }
+      font-size: 11pt; }
       .bw-menu .bw-links li > a:hover {
         border-bottom: 1px solid; }
       @media only screen and (max-width: 760px) {
@@ -161,8 +161,8 @@ table {
     list-style: none; }
   .bw-menu .bw-footer {
     color: #bfbfbf;
-    font-size: 11pt;
-    text-align: justify; }
+    text-align: justify;
+    font-size: 8pt; }
     @media only screen and (max-width: 760px) {
       .bw-menu .bw-footer {
         font-size: 8pt; } }

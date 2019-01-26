@@ -11,7 +11,7 @@ $ ->
             $(this).find('.bw-dropdown-list').slideToggle 200
 
     # Menu button handling
-    $('.bw-toggle').click ->
+    $('.bw-toggle').on 'click tap', ->
         $('.bw-content').toggleClass 'slided'
         $('.bw-toggle').toggleClass 'active'
 

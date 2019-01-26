@@ -90,8 +90,8 @@
     // Backwhite footer
     .bw-footer {
         color: darken($white-color, 25%);
-        font-size: $small-font-size;
         text-align: justify;
+        font-size: $small-font-size;
         @include on-mobile {
             font-size: $small-font-size-m;
         };

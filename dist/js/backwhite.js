@@ -13,7 +13,7 @@
       });
     });
     // Menu button handling
-    $('.bw-toggle').click(function() {
+    $('.bw-toggle').on('click tap', function() {
       $('.bw-content').toggleClass('slided');
       return $('.bw-toggle').toggleClass('active');
     });
