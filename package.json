@@ -15,10 +15,7 @@
   "author": "Anshul Kharbanda",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.54",
-    "@babel/preset-env": "^7.0.0-beta.54",
     "grunt": "^1.0.3",
-    "grunt-babel": "^8.0.0-beta.0",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-coffee": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",

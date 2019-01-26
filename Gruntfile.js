@@ -42,7 +42,6 @@ module.exports = function(grunt) {
     })
 
     // Load tasks
-    grunt.loadNpmTasks('grunt-babel')
     grunt.loadNpmTasks('grunt-sass')
     grunt.loadNpmTasks('grunt-contrib-coffee')
     grunt.loadNpmTasks('grunt-contrib-watch')

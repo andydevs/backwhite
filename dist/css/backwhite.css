@@ -190,7 +190,7 @@ table {
     margin-left: 8pt;
     margin-right: 8pt; }
 
-.bw-scroll-wrapper {
+.bw-horiz-scroll-wrapper {
   display: block;
   width: 100%;
   overflow-x: auto; }
