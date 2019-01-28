@@ -6,8 +6,13 @@
  * Author:  Anshul Kharbanda
  * Created: 7 - 15 - 2018
  */
-const sass = require('node-sass');
+const sass = require('node-sass')
 
+/**
+ * Configure grunt
+ *
+ * @param grunt grunt instance
+ */
 module.exports = function(grunt) {
     grunt.initConfig({
         coffee: {
@@ -24,6 +29,36 @@ module.exports = function(grunt) {
             dist: {
                 src: ['scss/backwhite.scss'],
                 dest: 'dist/css/backwhite.css'
+            }
+        },
+        copy: {
+            main: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'dist/css/',
+                        src: ['*'],
+                        dest: 'docs/support/'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'dist/js/',
+                        src: ['*'],
+                        dest: 'docs/support/'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'node_modules/jquery/dist/',
+                        src: ['jquery.min.js', 'jquery.min.js.map'],
+                        dest: 'docs/support/'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'node_modules/jquery-mobile/js/',
+                        src: ['jquery.mobile.js'],
+                        dest: 'docs/support/'
+                    }
+                ]
             }
         },
         watch: {
@@ -44,10 +79,11 @@ module.exports = function(grunt) {
     // Load tasks
     grunt.loadNpmTasks('grunt-sass')
     grunt.loadNpmTasks('grunt-contrib-coffee')
+    grunt.loadNpmTasks('grunt-contrib-copy')
     grunt.loadNpmTasks('grunt-contrib-watch')
 
     // Register tasks
-    grunt.registerTask('build', ['coffee', 'sass'])
+    grunt.registerTask('build', ['coffee', 'sass', 'copy'])
     grunt.registerTask('build:watch', ['build', 'watch'])
     grunt.registerTask('default', ['build'])
 }
