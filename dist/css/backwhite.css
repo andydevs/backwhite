@@ -51,7 +51,9 @@
       font-size: 11pt; } }
 
 a {
-  color: inherit; }
+  color: inherit;
+  border-bottom: 1px solid #003;
+  text-decoration: none; }
 
 h1, h2, h3, h4 {
   color: #003; }
@@ -69,6 +71,12 @@ h2 {
   font-size: 14pt; }
   @media only screen and (max-width: 760px) {
     h2 {
+      font-size: 14pt; } }
+
+h3 {
+  font-size: 14pt; }
+  @media only screen and (max-width: 760px) {
+    h3 {
       font-size: 14pt; } }
 
 ul {
@@ -125,7 +133,7 @@ table {
     left: 0%;
     right: 0%;
     transform: translate(0%, -50%);
-    padding: 0pt 8pt;
+    padding: 8pt;
     text-align: right; }
     @media only screen and (max-width: 760px) {
       .bw-menu .bw-menu-container {
@@ -175,7 +183,7 @@ table {
   left: 200px;
   right: 0%;
   bottom: 0%;
-  overflow: scroll;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   transition: none;
   background-color: #fff;
@@ -198,12 +206,13 @@ table {
         transform: translateX(100%); } }
   .bw-content .bw-content-container {
     margin-left: 8pt;
-    margin-right: 8pt; }
+    margin-right: 8pt;
+    padding: 8pt; }
 
 .bw-horiz-scroll-wrapper {
   display: block;
   width: 100%;
-  overflow-x: scroll; }
+  overflow-x: auto; }
 
 .bw-horiz-rule {
   display: block;

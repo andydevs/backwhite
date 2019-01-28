@@ -36,7 +36,7 @@
         transform: translate(0%, -50%);
 
         // Text align
-        padding: 0pt $spacing-unit;
+        padding: $spacing-unit;
         text-align: right;
         @include on-mobile {
             padding: 0pt 2*$spacing-unit;
@@ -108,7 +108,7 @@
     left: $desktop-menu-size;
     right: 0%;
     bottom: 0%;
-    overflow: scroll;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 
     // No sliding effect
@@ -143,6 +143,7 @@
     .bw-content-container {
         margin-left: 8pt;
         margin-right: 8pt;
+        padding: $spacing-unit;
     }
 }
 
@@ -150,7 +151,7 @@
 .bw-horiz-scroll-wrapper {
     display: block;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 // Basic horizontal rule

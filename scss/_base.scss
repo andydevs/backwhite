@@ -6,8 +6,11 @@
     };
 }
 
-
-a { color: inherit; }
+a {
+    color: inherit;
+    border-bottom: 1px solid $back-color;
+    text-decoration: none;
+}
 
 h1,h2,h3,h4 {
     color: $back-color;
@@ -22,6 +25,12 @@ h1 {
     };
 }
 h2 {
+    font-size: $medium-font-size;
+    @include on-mobile {
+        font-size: $medium-font-size-m;
+    };
+}
+h3 {
     font-size: $medium-font-size;
     @include on-mobile {
         font-size: $medium-font-size-m;
