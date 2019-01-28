@@ -1,0 +1,22 @@
+.bw-search {
+    margin: $spacing-unit 0pt;
+    display: flex;
+
+    input[name="q"] {
+        flex: 1;
+        padding: $spacing-unit/2;
+        background-color: inherit;
+        color: inherit;
+        border: none;
+        border-bottom: 1px solid;
+    }
+
+    input[type="submit"] {
+        flex: 0;
+        background-color: inherit;
+        color: inherit;
+        border: none;
+        border-bottom: 1px solid;
+        border-color: inherit;
+    }
+}

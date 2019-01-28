@@ -311,4 +311,22 @@ blockquote {
       .bw-row .bw-col-12 {
         grid-column-start: span 12; } }
 
+.bw-search {
+  margin: 8pt 0pt;
+  display: flex; }
+  .bw-search input[name="q"] {
+    flex: 1;
+    padding: 4pt;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    border-bottom: 1px solid; }
+  .bw-search input[type="submit"] {
+    flex: 0;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    border-bottom: 1px solid;
+    border-color: inherit; }
+
 /*# sourceMappingURL=backwhite.css.map */
