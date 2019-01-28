@@ -54,6 +54,8 @@ a {
   color: inherit;
   border-bottom: 1px solid #003;
   text-decoration: none; }
+  a:hover {
+    border-bottom: none; }
 
 h1, h2, h3, h4 {
   color: #003; }
@@ -105,6 +107,30 @@ table {
     border-right: none; }
   table tr:last-child > td {
     border-bottom: none; }
+
+pre {
+  display: block;
+  padding: 0pt;
+  margin-top: 8pt;
+  margin-bottom: 8pt;
+  margin-left: 32pt; }
+
+code {
+  font-family: monospace;
+  font-weight: 500; }
+
+blockquote {
+  font-size: 14pt;
+  margin: 0;
+  padding: 8pt;
+  margin-left: 16pt;
+  padding-left: 16pt;
+  color: #003;
+  border-left: 2px solid #003;
+  text-align: justify; }
+  @media only screen and (max-width: 760px) {
+    blockquote {
+      font-size: 14pt; } }
 
 .bw-menu {
   position: fixed;
