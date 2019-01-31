@@ -80,6 +80,24 @@
             }
         }
         > li.bw-dropdown {
+            > .bw-dropdown-link::before {
+                content:'';
+                position: absolute;
+                transform: translate(-$spacing-unit, 50%);
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+                border-left: 5px solid $white-color;
+            }
+            > .bw-dropdown-link.active::before {
+                transform: translate(-$spacing-unit*1.25, 75%);
+                border-top: 5px solid $white-color;
+                border-right: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+                border-left: 5px solid transparent;
+            }
             > .bw-dropdown-list {
                 display: none;
                 list-style: none;
