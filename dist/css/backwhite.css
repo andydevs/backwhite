@@ -132,7 +132,7 @@ blockquote {
     blockquote {
       font-size: 14pt; } }
 
-.bw-menu {
+.bw-back {
   position: fixed;
   z-index: -1;
   top: 0%;
@@ -144,16 +144,16 @@ blockquote {
   color: #fff;
   text-align: right; }
   @media only screen and (min-width: 1200px) {
-    .bw-menu {
+    .bw-back {
       width: 400px; } }
   @media only screen and (max-width: 760px) {
-    .bw-menu {
+    .bw-back {
       top: 0%;
       left: 0%;
       bottom: 0%;
       right: 0%;
       width: 100%; } }
-  .bw-menu .bw-menu-container {
+  .bw-back .bw-back-container {
     position: absolute;
     top: 50%;
     left: 0%;
@@ -162,48 +162,48 @@ blockquote {
     padding: 8pt;
     text-align: right; }
     @media only screen and (max-width: 760px) {
-      .bw-menu .bw-menu-container {
+      .bw-back .bw-back-container {
         padding: 0pt 16pt; } }
-  .bw-menu .bw-title {
+  .bw-back .bw-title {
     display: block;
     padding-bottom: 2pt;
     text-decoration: none;
     border-bottom: 1px solid;
     font-size: 30pt; }
     @media only screen and (max-width: 760px) {
-      .bw-menu .bw-title {
+      .bw-back .bw-title {
         font-size: 30pt; } }
-  .bw-menu .bw-links li {
+  .bw-back .bw-links li {
     margin: 8pt 0pt;
     list-style: none; }
     @media only screen and (max-width: 760px) {
-      .bw-menu .bw-links li {
+      .bw-back .bw-links li {
         margin: 16pt 0pt; } }
-    .bw-menu .bw-links li:before {
+    .bw-back .bw-links li:before {
       padding: 0;
       content: none; }
-    .bw-menu .bw-links li > a {
+    .bw-back .bw-links li > a {
       text-decoration: none;
       font-size: 11pt; }
-      .bw-menu .bw-links li > a:hover {
+      .bw-back .bw-links li > a:hover {
         border-bottom: 1px solid; }
       @media only screen and (max-width: 760px) {
-        .bw-menu .bw-links li > a {
+        .bw-back .bw-links li > a {
           font-size: 14pt; } }
-  .bw-menu .bw-links > li.bw-dropdown > .bw-dropdown-list {
+  .bw-back .bw-links > li.bw-dropdown > .bw-dropdown-list {
     display: none;
     list-style: none; }
-  .bw-menu .bw-footer {
+  .bw-back .bw-footer {
     color: #bfbfbf;
     text-align: justify;
     font-size: 8pt; }
     @media only screen and (max-width: 760px) {
-      .bw-menu .bw-footer {
+      .bw-back .bw-footer {
         font-size: 8pt; } }
-    .bw-menu .bw-footer p {
+    .bw-back .bw-footer p {
       text-align: justify; }
 
-.bw-content {
+.bw-front {
   position: fixed;
   top: 0%;
   left: 300px;
@@ -216,21 +216,21 @@ blockquote {
   color: #333;
   border-color: #003;
   box-shadow: -2pt 0pt 8pt black; }
-  .bw-content.slided {
+  .bw-front.slided {
     transform: none; }
   @media only screen and (min-width: 1200px) {
-    .bw-content {
+    .bw-front {
       left: 400px; } }
   @media only screen and (max-width: 760px) {
-    .bw-content {
+    .bw-front {
       top: 0%;
       left: 0%;
       bottom: 0%;
       right: 0%;
       transition: transform 0.5s ease-in-out; }
-      .bw-content.slided {
+      .bw-front.slided {
         transform: translateX(100%); } }
-  .bw-content .bw-content-container {
+  .bw-front .bw-front-container {
     margin-left: 8pt;
     margin-right: 8pt;
     padding: 8pt; }

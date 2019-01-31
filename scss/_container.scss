@@ -1,4 +1,4 @@
-.bw-menu {
+.bw-back {
     // Positioning
     position: fixed;
     z-index: -1;
@@ -27,7 +27,7 @@
     };
 
     // Container
-    .bw-menu-container {
+    .bw-back-container {
         // Positioning
         position: absolute;
         top: 50%;
@@ -101,7 +101,7 @@
     }
 }
 
-.bw-content {
+.bw-front {
     // Positioning
     position: fixed;
     top: 0%;
@@ -140,7 +140,7 @@
     };
 
     // Container
-    .bw-content-container {
+    .bw-front-container {
         margin-left: 8pt;
         margin-right: 8pt;
         padding: $spacing-unit;
