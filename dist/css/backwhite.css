@@ -138,14 +138,14 @@ blockquote {
   top: 0%;
   left: 0%;
   bottom: 0%;
-  width: 200px;
+  width: 300px;
   background-color: #003;
   border-color: #fff;
   color: #fff;
   text-align: right; }
   @media only screen and (min-width: 1200px) {
     .bw-menu {
-      width: 300px; } }
+      width: 400px; } }
   @media only screen and (max-width: 760px) {
     .bw-menu {
       top: 0%;
@@ -206,7 +206,7 @@ blockquote {
 .bw-content {
   position: fixed;
   top: 0%;
-  left: 200px;
+  left: 300px;
   right: 0%;
   bottom: 0%;
   overflow-y: scroll;
@@ -220,7 +220,7 @@ blockquote {
     transform: none; }
   @media only screen and (min-width: 1200px) {
     .bw-content {
-      left: 300px; } }
+      left: 400px; } }
   @media only screen and (max-width: 760px) {
     .bw-content {
       top: 0%;
@@ -315,14 +315,14 @@ blockquote {
   margin: 8pt 0pt;
   display: flex; }
   .bw-search input[name="q"] {
-    flex: 1;
+    flex-grow: 1;
     padding: 4pt;
     background-color: inherit;
     color: inherit;
     border: none;
     border-bottom: 1px solid; }
   .bw-search input[type="submit"] {
-    flex: 0;
+    flex-grow: 0;
     background-color: inherit;
     color: inherit;
     border: none;

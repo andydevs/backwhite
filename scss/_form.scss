@@ -3,7 +3,7 @@
     display: flex;
 
     input[name="q"] {
-        flex: 1;
+        flex-grow: 1;
         padding: $spacing-unit/2;
         background-color: inherit;
         color: inherit;
@@ -12,7 +12,7 @@
     }
 
     input[type="submit"] {
-        flex: 0;
+        flex-grow: 0;
         background-color: inherit;
         color: inherit;
         border: none;
