@@ -14,7 +14,7 @@
       });
     });
     // Menu button handling
-    $('.bw-toggle').on('click tap', function() {
+    $('.bw-toggle').click(function() {
       $('.bw-front').toggleClass('slided');
       return $('.bw-toggle').toggleClass('active');
     });
