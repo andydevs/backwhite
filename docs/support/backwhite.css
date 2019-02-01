@@ -158,7 +158,7 @@ blockquote {
     top: 50%;
     left: 0%;
     right: 0%;
-    transform: translate(0%, -50%);
+    transform: translateY(-50%);
     padding: 8pt;
     text-align: right; }
     @media only screen and (max-width: 760px) {
@@ -190,6 +190,22 @@ blockquote {
       @media only screen and (max-width: 760px) {
         .bw-back .bw-links li > a {
           font-size: 14pt; } }
+  .bw-back .bw-links > li.bw-dropdown > .bw-dropdown-link::before {
+    content: '';
+    position: absolute;
+    transform: translate(-8pt, 50%);
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff; }
+  .bw-back .bw-links > li.bw-dropdown > .bw-dropdown-link.active::before {
+    transform: translate(-10pt, 75%);
+    border-top: 5px solid #fff;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent; }
   .bw-back .bw-links > li.bw-dropdown > .bw-dropdown-list {
     display: none;
     list-style: none; }

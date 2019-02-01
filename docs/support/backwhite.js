@@ -9,12 +9,13 @@
     // Dropdown handling
     $('.bw-dropdown').each(function() {
       return $(this).find('.bw-dropdown-link').click(() => {
+        $(this).find('.bw-dropdown-link').toggleClass('active');
         return $(this).find('.bw-dropdown-list').slideToggle(200);
       });
     });
     // Menu button handling
     $('.bw-toggle').on('click tap', function() {
-      $('.bw-content').toggleClass('slided');
+      $('.bw-front').toggleClass('slided');
       return $('.bw-toggle').toggleClass('active');
     });
     // Fix table lengths
