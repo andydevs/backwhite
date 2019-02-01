@@ -63,7 +63,7 @@ table {
         margin: 0pt;
         padding: $spacing-unit;
         text-align: center;
-        border-bottom: 0.5pt solid;
+        border-bottom: 0.5pt solid $back-color;
         overflow: hidden;
     }
     th:last-child, td:last-child {

@@ -3,12 +3,12 @@
   z-index: 1;
   bottom: 16pt;
   right: 16pt;
-  background-color: #003;
+  background-color: #333;
   border: none;
   display: none;
   padding: 8pt;
   border-radius: 5pt;
-  box-shadow: 0px 1px 8px 4px #ababab;
+  box-shadow: 0px 1px 8px 4px black;
   transition: 0.5s ease-in-out; }
   .bw-toggle .bw-hamburger {
     position: relative;
@@ -52,13 +52,13 @@
 
 a {
   color: inherit;
-  border-bottom: 1px solid #003;
+  border-bottom: 1px solid #333;
   text-decoration: none; }
   a:hover {
     border-bottom: none; }
 
 h1, h2, h3, h4 {
-  color: #003; }
+  color: #333; }
 
 h1 {
   display: block;
@@ -96,12 +96,12 @@ table {
   padding: 0pt;
   border-spacing: 0; }
   table th {
-    color: #003; }
+    color: #333; }
   table th, table td {
     margin: 0pt;
     padding: 8pt;
     text-align: center;
-    border-bottom: 0.5pt solid;
+    border-bottom: 0.5pt solid #333;
     overflow: hidden; }
   table th:last-child, table td:last-child {
     border-right: none; }
@@ -125,8 +125,8 @@ blockquote {
   padding: 8pt;
   margin-left: 16pt;
   padding-left: 16pt;
-  color: #003;
-  border-left: 2px solid #003;
+  color: #333;
+  border-left: 2px solid #333;
   text-align: justify; }
   @media only screen and (max-width: 760px) {
     blockquote {
@@ -139,7 +139,7 @@ blockquote {
   left: 0%;
   bottom: 0%;
   width: 300px;
-  background-color: #003;
+  background-color: #333;
   border-color: #fff;
   color: #fff;
   text-align: right; }
@@ -229,8 +229,8 @@ blockquote {
   -webkit-overflow-scrolling: touch;
   transition: none;
   background-color: #fff;
-  color: #333;
-  border-color: #003;
+  color: black;
+  border-color: #333;
   box-shadow: -2pt 0pt 8pt black; }
   .bw-front.slided {
     transform: none; }
@@ -321,11 +321,6 @@ blockquote {
     @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-11 {
         grid-column-start: span 11; } }
-  .bw-row .bw-col-12 {
-    grid-column-start: span 12; }
-    @media only screen and (min-width: 1200px) {
-      .bw-row .bw-col-12 {
-        grid-column-start: span 12; } }
 
 .bw-search {
   margin: 8pt 0pt;

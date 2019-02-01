@@ -3,12 +3,12 @@
   z-index: 1;
   bottom: 16pt;
   right: 16pt;
-  background-color: #003;
+  background-color: #aaa;
   border: none;
   display: none;
   padding: 8pt;
   border-radius: 5pt;
-  box-shadow: 0px 1px 8px 4px #ababab;
+  box-shadow: 0px 1px 8px 4px #565656;
   transition: 0.5s ease-in-out; }
   .bw-toggle .bw-hamburger {
     position: relative;
@@ -52,13 +52,13 @@
 
 a {
   color: inherit;
-  border-bottom: 1px solid #003;
+  border-bottom: 1px solid #aaa;
   text-decoration: none; }
   a:hover {
     border-bottom: none; }
 
 h1, h2, h3, h4 {
-  color: #003; }
+  color: #aaa; }
 
 h1 {
   display: block;
@@ -96,7 +96,7 @@ table {
   padding: 0pt;
   border-spacing: 0; }
   table th {
-    color: #003; }
+    color: #aaa; }
   table th, table td {
     margin: 0pt;
     padding: 8pt;
@@ -125,8 +125,8 @@ blockquote {
   padding: 8pt;
   margin-left: 16pt;
   padding-left: 16pt;
-  color: #003;
-  border-left: 2px solid #003;
+  color: #aaa;
+  border-left: 2px solid #aaa;
   text-align: justify; }
   @media only screen and (max-width: 760px) {
     blockquote {
@@ -139,7 +139,7 @@ blockquote {
   left: 0%;
   bottom: 0%;
   width: 300px;
-  background-color: #003;
+  background-color: #aaa;
   border-color: #fff;
   color: #fff;
   text-align: right; }
@@ -230,8 +230,8 @@ blockquote {
   transition: none;
   background-color: #fff;
   color: #333;
-  border-color: #003;
-  box-shadow: -2pt 0pt 8pt black; }
+  border-color: #aaa;
+  box-shadow: -2pt 0pt 8pt #565656; }
   .bw-front.slided {
     transform: none; }
   @media only screen and (min-width: 1200px) {
