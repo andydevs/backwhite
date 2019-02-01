@@ -1,6 +1,11 @@
 .bw-back {
     // Positioning
     position: fixed;
+    /* This tells css to ensure that this
+     * layer is in the back, regardless of
+     * how it's included in the document.
+     * It is exactly what it says, the
+     * z-axis position of the element */
     z-index: -1;
     top: 0%;
     left: 0%;

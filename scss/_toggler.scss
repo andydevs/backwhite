@@ -1,6 +1,10 @@
 .bw-toggle {
     // Positioning
     position: fixed;
+    /* Setting a z-index of 1 to so that
+     * this is in front of both the front
+     * and back layers in it's own special
+     * front-front layer (see _back.scss) */
     z-index: 1;
     bottom: $spacing-unit*2;
     right: $spacing-unit*2;
