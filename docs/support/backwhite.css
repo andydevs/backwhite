@@ -1,5 +1,9 @@
 .bw-toggle {
   position: fixed;
+  /* Setting a z-index of 1 to so that
+     * this is in front of both the front
+     * and back layers in it's own special
+     * front-front layer (see _back.scss) */
   z-index: 1;
   bottom: 16pt;
   right: 16pt;
@@ -45,6 +49,12 @@
 
 .bw-back {
   position: fixed;
+  /* This tells css to ensure that this
+     * layer is in the back, regardless of
+     * how it's included in the document.
+     * It is exactly what it says, the
+     * z-axis position of the element */
+  z-index: -1;
   top: 0%;
   left: 0%;
   bottom: 0%;
@@ -131,6 +141,10 @@
 
 .bw-front {
   position: fixed;
+  /* Setting a z-index of 0 to so that
+     * this is in front of the back layer
+     * with a z-index of -1 (see _back.scss) */
+  z-index: 0;
   top: 0%;
   left: 300px;
   right: 0%;

@@ -51,12 +51,6 @@ module.exports = function(grunt) {
                         cwd: 'node_modules/jquery/dist/',
                         src: ['jquery.min.js', 'jquery.min.js.map'],
                         dest: 'docs/support/'
-                    },
-                    {
-                        expand: true,
-                        cwd: 'node_modules/jquery-mobile/js/',
-                        src: ['jquery.mobile.js'],
-                        dest: 'docs/support/'
                     }
                 ]
             }
