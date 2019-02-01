@@ -1,0 +1,57 @@
+// Grid rows
+.bw-row {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 8pt;
+
+    // Create grid columns
+    $col-class-slug: bw-col !default;
+    @for $i from 1 to 12 {
+        .#{$col-class-slug}-#{$i} {
+            grid-column-start: span 12;
+            @include on-max {
+                grid-column-start: span $i;
+            };
+        }
+    }
+}
+
+
+// Wraps an element with a horizontal scroll bar
+.bw-horiz-scroll-wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+// Basic horizontal rule
+.bw-horiz-rule {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+// Search bar
+.bw-search {
+    margin: $spacing-unit 0pt;
+    display: flex;
+
+    input[name="q"] {
+        flex-grow: 1;
+        padding: $spacing-unit/2;
+        background-color: inherit;
+        color: inherit;
+        border: none;
+        border-bottom: 1px solid;
+    }
+
+    input[type="submit"] {
+        flex-grow: 0;
+        background-color: inherit;
+        color: inherit;
+        border: none;
+        border-bottom: 1px solid;
+        border-color: inherit;
+    }
+}

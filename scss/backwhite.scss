@@ -1,7 +1,9 @@
 // Positioning
-$desktop-menu-size: 300px;
-$desktop-menu-size-l: 400px;
 $spacing-unit: 8pt;
+
+// Side menu size
+$desktop-menu-size: 300px;
+$desktop-menu-size-x: 400px;
 
 // Normal font size
 $mega-font-size: 30pt;
@@ -10,7 +12,7 @@ $medium-font-size: 14pt;
 $normal-font-size: 11pt;
 $small-font-size: 8pt;
 
-// Responsive font size
+// Mobile font size
 $mega-font-size-m: 30pt;
 $large-font-size-m: 20pt;
 $medium-font-size-m: 14pt;
@@ -38,8 +40,9 @@ $max-width: 1200px;
     }
 }
 
+// Imports
 @import "toggler";
+@import "back";
+@import "front";
 @import "base";
-@import "container";
-@import "row";
-@import "form";
+@import "custom";

@@ -1,0 +1,45 @@
+.bw-front {
+    // Positioning
+    position: fixed;
+    top: 0%;
+    left: $desktop-menu-size;
+    right: 0%;
+    bottom: 0%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    // No sliding effect
+    transition: none;
+    &.slided { transform: none; }
+
+    // Styling
+    background-color: $white-color;
+    color: black;
+    border-color: $back-color;
+    box-shadow: -2pt 0pt 8pt darken($back-color, 33%);
+
+    // Mobile
+    @include on-max {
+        left: $desktop-menu-size-x;
+    };
+    @include on-mobile {
+        // Positioning
+        top: 0%;
+        left: 0%;
+        bottom: 0%;
+        right: 0%;
+
+        // Sliding effect
+        transition: transform 0.5s ease-in-out;
+        &.slided {
+            transform: translateX(100%);
+        }
+    };
+
+    // Container
+    .bw-front-container {
+        margin-left: $spacing-unit;
+        margin-right: $spacing-unit;
+        padding: $spacing-unit;
+    }
+}
