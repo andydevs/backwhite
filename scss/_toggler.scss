@@ -11,8 +11,8 @@
     background-color: $back-color;
     border: none;
     display: none;
-    padding: 8pt;
-    border-radius: 5pt;
+    padding: $spacing-unit;
+    border-radius: $border-radius;
     box-shadow: 0px 2px 8px 4px darken($white-color, 33%);
     transition: 0.5s ease-in-out;
 
@@ -30,6 +30,8 @@
             background-color: white;
             transform: translateY(-50%);
             transition: 0.5s ease-in-out;
+
+            // Hamburger bars
             &:nth-child(1) { top: 10%; }
             &:nth-child(2) { top: 50%; }
             &:nth-child(3) { top: 90%; }

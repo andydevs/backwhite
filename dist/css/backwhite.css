@@ -230,7 +230,8 @@ table {
   width: 100%;
   table-layout: fixed;
   padding: 0pt;
-  border-spacing: 0; }
+  border-spacing: 0;
+  overflow-x: auto; }
   table th {
     color: #333; }
   table th, table td {
@@ -246,11 +247,14 @@ table {
 
 pre {
   display: block;
-  padding: 0pt;
+  padding: 8pt;
   margin-top: 8pt;
   margin-bottom: 8pt;
-  margin-left: 8pt;
-  overflow-x: scroll; }
+  overflow-x: auto;
+  background-color: #333;
+  color: #fff;
+  box-shadow: inset 0px 2px 8px 4px black;
+  border-radius: 5pt; }
 
 code {
   font-family: monospace;

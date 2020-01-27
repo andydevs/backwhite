@@ -56,6 +56,7 @@ table {
     table-layout: fixed;
     padding: 0pt;
     border-spacing: 0;
+    overflow-x: auto;
     th {
         color: $back-color;
     }
@@ -76,11 +77,14 @@ table {
 
 pre {
     display: block;
-    padding: 0pt;
+    padding: $spacing-unit;
     margin-top: $spacing-unit;
     margin-bottom: $spacing-unit;
-    margin-left: $spacing-unit;
-    overflow-x: scroll;
+    overflow-x: auto;
+    background-color: $back-color;
+    color: $white-color;
+    box-shadow: inset 0px 2px 8px 4px darken($back-color, 33%);
+    border-radius: $border-radius;
 }
 
 code {
