@@ -246,29 +246,41 @@ table {
     border-bottom: none; }
 
 pre {
-  display: block;
-  padding: 8pt;
-  margin-top: 8pt;
-  margin-bottom: 8pt;
-  overflow-x: auto;
   background-color: #333;
   color: #fff;
   box-shadow: inset 0px 2px 8px 4px black;
-  border-radius: 5pt; }
+  border-radius: 5pt;
+  padding: 8pt;
+  display: block;
+  margin: 0;
+  margin-top: 8pt;
+  margin-bottom: 8pt;
+  padding: 16pt;
+  overflow-x: auto; }
 
 code {
   font-family: monospace;
   font-weight: 500; }
 
 blockquote {
-  font-size: 14pt;
-  margin: 0;
+  background-color: #333;
+  color: #fff;
+  box-shadow: inset 0px 2px 8px 4px black;
+  border-radius: 5pt;
   padding: 8pt;
-  margin-left: 16pt;
-  padding-left: 16pt;
-  color: #333;
-  border-left: 2px solid #333;
-  text-align: justify; }
+  display: block;
+  margin: 0;
+  margin-top: 8pt;
+  margin-bottom: 8pt;
+  padding: 16pt;
+  font-size: 14pt;
+  font-style: italic;
+  text-align: justify;
+  display: block;
+  margin: 0;
+  margin-top: 8pt;
+  margin-bottom: 8pt;
+  padding: 16pt; }
   @media only screen and (max-width: 760px) {
     blockquote {
       font-size: 14pt; } }

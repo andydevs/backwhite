@@ -57,6 +57,7 @@ table {
     padding: 0pt;
     border-spacing: 0;
     overflow-x: auto;
+
     th {
         color: $back-color;
     }
@@ -76,15 +77,8 @@ table {
 }
 
 pre {
-    display: block;
-    padding: $spacing-unit;
-    margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
+    @include big-back-boi;
     overflow-x: auto;
-    background-color: $back-color;
-    color: $white-color;
-    box-shadow: inset 0px 2px 8px 4px darken($back-color, 33%);
-    border-radius: $border-radius;
 }
 
 code {
@@ -93,15 +87,20 @@ code {
 }
 
 blockquote {
+    @include big-back-boi;
+
+    // Font
     font-size: $medium-font-size;
     @include on-mobile {
         font-size: $medium-font-size-m;
     };
-    margin: 0;
-    padding: $spacing-unit;
-    margin-left: 2*$spacing-unit;
-    padding-left: 2*$spacing-unit;
-    color: $back-color;
-    border-left: 2px solid $back-color;
+    font-style: italic;
     text-align: justify;
+
+    // Spacing
+    display: block;
+    margin: 0;
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    padding: 2*$spacing-unit;
 }
