@@ -55,6 +55,9 @@
      * It is exactly what it says, the
      * z-axis position of the element */
   z-index: -1;
+  /* Back panel sizing. Fill vertically from
+     * top to bottom. Horizontally, start at
+     * left, be $desktop-menu-size wide*/
   top: 0%;
   left: 0%;
   bottom: 0%;
@@ -79,8 +82,8 @@
     left: 0%;
     right: 0%;
     transform: translateY(-50%);
-    padding: 8pt;
-    text-align: right; }
+    text-align: right;
+    padding: 8pt; }
     @media only screen and (max-width: 760px) {
       .bw-back .bw-back-container {
         padding: 0pt 16pt; } }
