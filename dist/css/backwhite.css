@@ -354,7 +354,7 @@ blockquote {
     color: inherit;
     border: none;
     border-bottom: 1px solid; }
-  .bw-search input[type="submit"] {
+  .bw-search button[type="submit"] {
     flex-grow: 0;
     background-color: inherit;
     color: inherit;
