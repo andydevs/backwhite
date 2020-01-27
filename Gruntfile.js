@@ -31,30 +31,6 @@ module.exports = function(grunt) {
                 dest: 'dist/css/backwhite.css'
             }
         },
-        copy: {
-            main: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: 'dist/css/',
-                        src: ['*'],
-                        dest: 'docs/support/'
-                    },
-                    {
-                        expand: true,
-                        cwd: 'dist/js/',
-                        src: ['*'],
-                        dest: 'docs/support/'
-                    },
-                    {
-                        expand: true,
-                        cwd: 'node_modules/jquery/dist/',
-                        src: ['jquery.min.js', 'jquery.min.js.map'],
-                        dest: 'docs/support/'
-                    }
-                ]
-            }
-        },
         watch: {
             options: {
                 livereload: true
@@ -73,11 +49,10 @@ module.exports = function(grunt) {
     // Load tasks
     grunt.loadNpmTasks('grunt-sass')
     grunt.loadNpmTasks('grunt-contrib-coffee')
-    grunt.loadNpmTasks('grunt-contrib-copy')
     grunt.loadNpmTasks('grunt-contrib-watch')
 
     // Register tasks
-    grunt.registerTask('build', ['coffee', 'sass', 'copy'])
+    grunt.registerTask('build', ['coffee', 'sass'])
     grunt.registerTask('build:watch', ['build', 'watch'])
     grunt.registerTask('default', ['build'])
 }
