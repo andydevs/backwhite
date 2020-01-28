@@ -17,6 +17,15 @@
     }
 }
 
+.bw-rec-button {
+    @include back-boi;
+    border: none;
+    display: inline-block;
+    transition: box-shadow 0.5s;
+    &:hover {
+        box-shadow: none;
+    }
+}
 
 // Wraps an element with a horizontal scroll bar
 .bw-horiz-scroll-wrapper {
