@@ -217,6 +217,10 @@ h3 {
     h3 {
       font-size: 14pt; } }
 
+p {
+  margin-top: 8pt;
+  margin-bottom: 8pt; }
+
 ul {
   list-style: none; }
   ul > li:before {
@@ -230,8 +234,7 @@ table {
   width: 100%;
   table-layout: fixed;
   padding: 0pt;
-  border-spacing: 0;
-  overflow-x: auto; }
+  border-spacing: 0; }
   table th {
     color: #333; }
   table th, table td {
@@ -345,6 +348,18 @@ blockquote {
     @media only screen and (min-width: 1200px) {
       .bw-row .bw-col-11 {
         grid-column-start: span 11; } }
+
+.bw-rec-button {
+  background-color: #333;
+  color: #fff;
+  box-shadow: inset 0px 2px 8px 4px black;
+  border-radius: 5pt;
+  padding: 8pt;
+  border: none;
+  display: inline-block;
+  transition: box-shadow 0.5s; }
+  .bw-rec-button:hover {
+    box-shadow: none; }
 
 .bw-horiz-scroll-wrapper {
   display: block;
