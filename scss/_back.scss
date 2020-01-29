@@ -53,8 +53,10 @@
 
         // Padding
         padding: $spacing-unit;
+        margin: 0;
         @include on-mobile {
-            padding: 0pt 2*$spacing-unit;
+            margin-left: $spacing-unit;
+            margin-right: $spacing-unit;
         }
     }
 
