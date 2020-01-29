@@ -41,12 +41,12 @@
 
     // Container
     .bw-back-container {
-        // Positioning
-        position: absolute;
-        top: 50%;
-        left: 0%;
-        right: 0%;
-        transform: translateY(-50%);
+        // // Positioning
+        // position: absolute;
+        // top: 50%;
+        // left: 0%;
+        // right: 0%;
+        // transform: translateY(-50%);
 
         // Text align
         text-align: right;
@@ -61,12 +61,13 @@
     // Title
     .bw-title {
         display: block;
-        padding-bottom: 2pt;
         text-decoration: none;
         border-bottom: 1px solid;
-        font-size: $mega-font-size;
+        padding-bottom: 2pt;
+        margin: $spacing-unit 0pt;
+        font-size: $large-font-size;
         @include on-mobile {
-            font-size: $mega-font-size-m;
+            font-size: $large-font-size-m;
         };
     }
 
