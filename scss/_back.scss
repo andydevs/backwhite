@@ -72,65 +72,10 @@
 
     // Links
     .bw-links {
-        // Link list item styling
-        li {
-            // Spacing
-            margin: 8pt 0pt;
-            @include on-mobile {
-                margin: 16pt 0pt;
-            };
-
-            // Remove bullet point
-            list-style: none;
-            &:before {
-                padding: 0;
-                content: none;
-            }
-
-            // Link styling
-            > a {
-                // Make underline (as a border) appear on hover
-                text-decoration: none;
-                &:hover {
-                    border-bottom: 1px solid;
-                }
-
-                // Font size
-                font-size: $normal-font-size;
-                @include on-mobile {
-                    font-size: $medium-font-size-m;
-                };
-            }
-        }
-
-        // Dropdown styling
-        > li.bw-dropdown {
-            // Dropdown caret pointing sideways
-            > .bw-dropdown-link::before {
-                content:'';
-                position: absolute;
-                transform: translate(-$spacing-unit, 50%);
-                width: 0;
-                height: 0;
-                border-top: 5px solid transparent;
-                border-right: 5px solid transparent;
-                border-bottom: 5px solid transparent;
-                border-left: 5px solid $white-color;
-            }
-
-            // Dropdown caret pointing down
-            > .bw-dropdown-link.active::before {
-                transform: translate(-$spacing-unit*1.25, 75%);
-                border-top: 5px solid $white-color;
-                border-right: 5px solid transparent;
-                border-bottom: 5px solid transparent;
-                border-left: 5px solid transparent;
-            }
-
-            // Dropdown list is invisible to start
-            > .bw-dropdown-list {
-                display: none;
-                list-style: none;
+        a {
+            text-decoration: none;
+            &:hover {
+                border-bottom: 1px solid;
             }
         }
     }

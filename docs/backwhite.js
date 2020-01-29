@@ -19,7 +19,7 @@
       return $('.bw-toggle').toggleClass('active');
     });
     // Fix table lengths
-    return $('table').each(function() {
+    return $('.bw-front nptable').each(function() {
       var canvas, ctx, font, length, longest;
       // Find longest
       longest = $(this).find('th,td').map(function() {

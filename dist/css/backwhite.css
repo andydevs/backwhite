@@ -96,42 +96,10 @@
     @media only screen and (max-width: 760px) {
       .bw-back .bw-title {
         font-size: 30pt; } }
-  .bw-back .bw-links li {
-    margin: 8pt 0pt;
-    list-style: none; }
-    @media only screen and (max-width: 760px) {
-      .bw-back .bw-links li {
-        margin: 16pt 0pt; } }
-    .bw-back .bw-links li:before {
-      padding: 0;
-      content: none; }
-    .bw-back .bw-links li > a {
-      text-decoration: none;
-      font-size: 11pt; }
-      .bw-back .bw-links li > a:hover {
-        border-bottom: 1px solid; }
-      @media only screen and (max-width: 760px) {
-        .bw-back .bw-links li > a {
-          font-size: 14pt; } }
-  .bw-back .bw-links > li.bw-dropdown > .bw-dropdown-link::before {
-    content: '';
-    position: absolute;
-    transform: translate(-8pt, 50%);
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid #fff; }
-  .bw-back .bw-links > li.bw-dropdown > .bw-dropdown-link.active::before {
-    transform: translate(-10pt, 75%);
-    border-top: 5px solid #fff;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid transparent; }
-  .bw-back .bw-links > li.bw-dropdown > .bw-dropdown-list {
-    display: none;
-    list-style: none; }
+  .bw-back .bw-links a {
+    text-decoration: none; }
+    .bw-back .bw-links a:hover {
+      border-bottom: 1px solid; }
   .bw-back .bw-footer {
     color: #bfbfbf;
     text-align: justify;
