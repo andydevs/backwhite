@@ -59,13 +59,9 @@ module.exports = function(grunt) {
             options: {
                 livereload: true
             },
-            scss: {
-                files: ['scss/**/*.scss'],
-                tasks: ['sass']
-            },
-            coffee: {
-                files: ['coffee/**/*.coffee'],
-                tasks: ['coffee']
+            files: {
+                files: ['scss/**/*.scss', 'coffee/**/*.coffee'],
+                tasks: ['build']
             }
         }
     })

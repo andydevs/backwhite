@@ -77,25 +77,23 @@
       right: 0%;
       width: 100%; } }
   .bw-back .bw-back-container {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    right: 0%;
-    transform: translateY(-50%);
     text-align: right;
-    padding: 8pt; }
+    padding: 8pt;
+    margin: 0; }
     @media only screen and (max-width: 760px) {
       .bw-back .bw-back-container {
-        padding: 0pt 16pt; } }
+        margin-left: 8pt;
+        margin-right: 8pt; } }
   .bw-back .bw-title {
     display: block;
-    padding-bottom: 2pt;
     text-decoration: none;
     border-bottom: 1px solid;
-    font-size: 30pt; }
+    padding-bottom: 2pt;
+    margin: 8pt 0pt;
+    font-size: 20pt; }
     @media only screen and (max-width: 760px) {
       .bw-back .bw-title {
-        font-size: 30pt; } }
+        font-size: 20pt; } }
   .bw-back .bw-links a {
     text-decoration: none; }
     .bw-back .bw-links a:hover {
@@ -162,7 +160,8 @@ a {
     border-bottom: none; }
 
 h1, h2, h3, h4 {
-  color: #333; }
+  color: #333;
+  margin: 8pt 0pt; }
 
 h1 {
   display: block;
@@ -348,13 +347,15 @@ blockquote {
     background-color: inherit;
     color: inherit;
     border: none;
-    border-bottom: 1px solid; }
+    border-bottom: 1px solid;
+    border-radius: 0pt; }
   .bw-search button[type="submit"] {
     flex-grow: 0;
     background-color: inherit;
     color: inherit;
     border: none;
     border-bottom: 1px solid;
-    border-color: inherit; }
+    border-color: inherit;
+    border-radius: 0pt; }
 
 /*# sourceMappingURL=backwhite.css.map */
