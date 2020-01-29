@@ -348,13 +348,15 @@ blockquote {
     background-color: inherit;
     color: inherit;
     border: none;
-    border-bottom: 1px solid; }
+    border-bottom: 1px solid;
+    border-radius: 0pt; }
   .bw-search button[type="submit"] {
     flex-grow: 0;
     background-color: inherit;
     color: inherit;
     border: none;
     border-bottom: 1px solid;
-    border-color: inherit; }
+    border-color: inherit;
+    border-radius: 0pt; }
 
 /*# sourceMappingURL=backwhite.css.map */
