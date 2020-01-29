@@ -17,7 +17,7 @@ $ ->
         $('.bw-toggle').toggleClass 'active'
 
     # Fix table lengths
-    $('.bw-front nptable').each ->
+    $('.bw-front table').each ->
         # Find longest
         longest = $(this)
             .find 'th,td'
