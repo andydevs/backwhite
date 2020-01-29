@@ -6,13 +6,6 @@
   // Author:  Anshul Kharbanda
   // Created: 7 - 15 - 2018
   $(function() {
-    // Dropdown handling
-    $('.bw-dropdown').each(function() {
-      return $(this).find('.bw-dropdown-link').click(() => {
-        $(this).find('.bw-dropdown-link').toggleClass('active');
-        return $(this).find('.bw-dropdown-list').slideToggle(200);
-      });
-    });
     // Menu button handling
     $('.bw-toggle').click(function() {
       $('.bw-front').toggleClass('slided');

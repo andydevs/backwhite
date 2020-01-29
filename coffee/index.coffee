@@ -5,12 +5,6 @@
 # Author:  Anshul Kharbanda
 # Created: 7 - 15 - 2018
 $ ->
-    # Dropdown handling
-    $('.bw-dropdown').each ->
-        $(this).find('.bw-dropdown-link').click =>
-            $(this).find('.bw-dropdown-link').toggleClass 'active'
-            $(this).find('.bw-dropdown-list').slideToggle 200
-
     # Menu button handling
     $('.bw-toggle').click ->
         $('.bw-front').toggleClass 'slided'
