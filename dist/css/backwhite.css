@@ -74,7 +74,6 @@
       top: 0%;
       left: 0%;
       bottom: 0%;
-      right: 0%;
       width: 100%; } }
   .bw-back .bw-back-container {
     text-align: right;
@@ -109,7 +108,7 @@
       text-align: justify; }
 
 .bw-front {
-  position: fixed;
+  position: absolute;
   /* Setting a z-index of 0 to so that
      * this is in front of the back layer
      * with a z-index of -1 (see _back.scss) */
@@ -117,10 +116,8 @@
   top: 0%;
   left: 300px;
   right: 0%;
-  bottom: 0%;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
   transition: none;
   background-color: #fff;
   color: black;
@@ -135,11 +132,10 @@
     .bw-front {
       top: 0%;
       left: 0%;
-      bottom: 0%;
       right: 0%;
-      transition: transform 0.5s ease-in-out; }
+      transition: margin-left 0.5s ease-in-out; }
       .bw-front.slided {
-        transform: translateX(100%); } }
+        margin-left: 100%; } }
   .bw-front .bw-front-container {
     margin-left: 8pt;
     margin-right: 8pt;
@@ -151,6 +147,9 @@
   @media only screen and (max-width: 760px) {
     * {
       font-size: 11pt; } }
+
+body {
+  overflow-x: hidden; }
 
 a {
   color: inherit;

@@ -1,6 +1,7 @@
 .bw-front {
     // Positioning
-    position: fixed;
+    position: absolute;
+
     /* Setting a z-index of 0 to so that
      * this is in front of the back layer
      * with a z-index of -1 (see _back.scss) */
@@ -8,10 +9,8 @@
     top: 0%;
     left: $desktop-menu-size;
     right: 0%;
-    bottom: 0%;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
 
     // No sliding effect
     transition: none;
@@ -31,13 +30,12 @@
         // Positioning
         top: 0%;
         left: 0%;
-        bottom: 0%;
         right: 0%;
 
         // Sliding effect
-        transition: transform 0.5s ease-in-out;
+        transition: margin-left 0.5s ease-in-out;
         &.slided {
-            transform: translateX(100%);
+            margin-left: 100%;
         }
     };
 
