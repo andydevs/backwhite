@@ -77,16 +77,16 @@
       width: 100%; } }
   .bw-back .bw-back-container {
     text-align: right;
-    display: block;
+    transition: opacity 0.5s ease-in-out;
     padding: 8pt;
     margin: 0; }
     @media only screen and (max-width: 760px) {
       .bw-back .bw-back-container {
         margin-left: 8pt;
         margin-right: 8pt;
-        display: none; }
+        opacity: 0; }
         .bw-back .bw-back-container.visible {
-          display: block; } }
+          opacity: 1; } }
   .bw-back .bw-title {
     display: block;
     text-decoration: none;
