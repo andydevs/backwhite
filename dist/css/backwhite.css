@@ -4435,7 +4435,7 @@ readers do not read off random characters that represent icons */
   text-align: right; }
   @media only screen and (min-width: 1200px) {
     .bw-back {
-      width: 400px; } }
+      width: 300px; } }
   @media only screen and (max-width: 760px) {
     .bw-back {
       top: 0%;
@@ -4489,7 +4489,7 @@ readers do not read off random characters that represent icons */
     transform: none; }
   @media only screen and (min-width: 1200px) {
     .bw-front {
-      left: 400px; } }
+      left: 300px; } }
   @media only screen and (max-width: 760px) {
     .bw-front {
       top: 0%;
