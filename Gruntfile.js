@@ -31,30 +31,6 @@ module.exports = function(grunt) {
                 dest: 'dist/css/backwhite.css'
             }
         },
-        // copy: {
-        //     main: {
-        //         files: [
-        //             {
-        //                 expand: true,
-        //                 cwd: './node_modules/jquery/dist',
-        //                 src: 'jquery.min.js',
-        //                 dest: 'docs/'
-        //             },
-        //             {
-        //                 expand: true,
-        //                 cwd: './dist/js',
-        //                 src: ['backwhite.js*'],
-        //                 dest: 'docs/'
-        //             },
-        //             {
-        //                 expand: true,
-        //                 cwd: './dist/css',
-        //                 src: ['backwhite.css*'],
-        //                 dest: 'docs/'
-        //             }
-        //         ]
-        //     }
-        // },
         watch: {
             options: {
                 livereload: true
