@@ -31,6 +31,14 @@ module.exports = function(grunt) {
                 dest: 'dist/css/backwhite.css'
             }
         },
+        copy: {
+            main: {
+                expand: true,
+                cwd: './node_modules/@fortawesome/fontawesome-free/webfonts',
+                src: ['*'],
+                dest: 'dist/fonts'
+            }
+        },
         watch: {
             options: {
                 livereload: true
@@ -48,11 +56,12 @@ module.exports = function(grunt) {
 
     // Load tasks
     grunt.loadNpmTasks('grunt-sass')
+    grunt.loadNpmTasks('grunt-contrib-copy')
     grunt.loadNpmTasks('grunt-contrib-coffee')
     grunt.loadNpmTasks('grunt-contrib-watch')
 
     // Register tasks
-    grunt.registerTask('build', ['coffee', 'sass'])
+    grunt.registerTask('build', ['coffee', 'sass', 'copy'])
     grunt.registerTask('build:watch', ['build', 'watch'])
     grunt.registerTask('default', ['build'])
 }

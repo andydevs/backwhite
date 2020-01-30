@@ -1,3 +1,6 @@
+// Font awesome config
+$fa-font-path: "../fonts";
+
 // Colors
 $back-color: #333;
 $white-color: #fff;
@@ -25,7 +28,7 @@ $normal-font-size-m: 11pt;
 $small-font-size-m: 8pt;
 
 // Font
-$font-family: "Calibri Light", "Arial", sans-serif;
+$font-family: "Calibri Light", sans-serif;
 
 // Responsive blocks
 $mobile-width: 760px;
@@ -58,7 +61,8 @@ $max-width: 1200px;
     padding: 2*$spacing-unit;
 }
 
-// Imports
+@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "back";
 @import "front";
 @import "base";

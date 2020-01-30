@@ -24,6 +24,7 @@
     "node-sass": "^4.9.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
     "jquery": "^3.3.1"
   }
 }
