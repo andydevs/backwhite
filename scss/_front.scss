@@ -63,6 +63,10 @@
             border: none;
             padding: $spacing-unit/2;
             margin: $spacing-unit/2;
+            display: none;
+            @include on-mobile {
+                display: inline-block;
+            }
         }
     }
 }
