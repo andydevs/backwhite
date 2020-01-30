@@ -31,30 +31,30 @@ module.exports = function(grunt) {
                 dest: 'dist/css/backwhite.css'
             }
         },
-        copy: {
-            main: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: './node_modules/jquery/dist',
-                        src: 'jquery.min.js',
-                        dest: 'docs/'
-                    },
-                    {
-                        expand: true,
-                        cwd: './dist/js',
-                        src: ['backwhite.js*'],
-                        dest: 'docs/'
-                    },
-                    {
-                        expand: true,
-                        cwd: './dist/css',
-                        src: ['backwhite.css*'],
-                        dest: 'docs/'
-                    }
-                ]
-            }
-        },
+        // copy: {
+        //     main: {
+        //         files: [
+        //             {
+        //                 expand: true,
+        //                 cwd: './node_modules/jquery/dist',
+        //                 src: 'jquery.min.js',
+        //                 dest: 'docs/'
+        //             },
+        //             {
+        //                 expand: true,
+        //                 cwd: './dist/js',
+        //                 src: ['backwhite.js*'],
+        //                 dest: 'docs/'
+        //             },
+        //             {
+        //                 expand: true,
+        //                 cwd: './dist/css',
+        //                 src: ['backwhite.css*'],
+        //                 dest: 'docs/'
+        //             }
+        //         ]
+        //     }
+        // },
         watch: {
             options: {
                 livereload: true
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch')
 
     // Register tasks
-    grunt.registerTask('build', ['coffee', 'sass', 'copy'])
+    grunt.registerTask('build', ['coffee', 'sass'])
     grunt.registerTask('build:watch', ['build', 'watch'])
     grunt.registerTask('default', ['build'])
 }
