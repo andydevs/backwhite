@@ -30,37 +30,11 @@ $small-font-size-m: 8pt;
 // Font
 $font-family: "Calibri Light", sans-serif;
 
-// Responsive blocks
+// Responsive sizes
 $mobile-width: 760px;
-@mixin on-mobile {
-    @media only screen and (max-width: $mobile-width) {
-        @content;
-    }
-}
 $max-width: 1200px;
-@mixin on-max {
-    @media only screen and (min-width: $max-width) {
-        @content;
-    }
-}
 
-@mixin back-boi {
-    background-color: $back-color;
-    color: $white-color;
-    box-shadow: inset 0px 0pt 8pt darken($back-color, 33%);
-    border-radius: $border-radius;
-    padding: $spacing-unit;
-}
-
-@mixin big-back-boi {
-    @include back-boi;
-    display: block;
-    margin: 0;
-    margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
-    padding: 2*$spacing-unit;
-}
-
+// Imports
 @import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "back";
