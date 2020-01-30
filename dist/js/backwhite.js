@@ -8,6 +8,7 @@
   $(function() {
     // Menu button handling
     $('.bw-toggle').click(function() {
+      $('.bw-back-container').toggleClass('visible');
       $('.bw-front').toggleClass('slided');
       return $('.bw-toggle').toggleClass('active');
     });

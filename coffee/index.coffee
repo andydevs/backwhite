@@ -7,6 +7,7 @@
 $ ->
     # Menu button handling
     $('.bw-toggle').click ->
+        $('.bw-back-container').toggleClass 'visible'
         $('.bw-front').toggleClass 'slided'
         $('.bw-toggle').toggleClass 'active'
 
