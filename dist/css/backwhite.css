@@ -77,14 +77,15 @@
       width: 100%; } }
   .bw-back .bw-back-container {
     text-align: right;
-    transition: opacity 0.5s ease-in-out;
+    transition: none;
     padding: 8pt;
     margin: 0; }
     @media only screen and (max-width: 760px) {
       .bw-back .bw-back-container {
         margin-left: 8pt;
         margin-right: 8pt;
-        opacity: 0; }
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out; }
         .bw-back .bw-back-container.visible {
           opacity: 1; } }
   .bw-back .bw-title {

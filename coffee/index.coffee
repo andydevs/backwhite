@@ -11,7 +11,7 @@ $ ->
         $('.bw-front').toggleClass 'slided'
         $('.bw-toggle').toggleClass 'active'
 
-    # Fix table lengths
+    # Dynamic Tables
     $('.bw-front table').each ->
         # Find longest
         longest = $(this)

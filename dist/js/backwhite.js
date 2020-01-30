@@ -12,7 +12,7 @@
       $('.bw-front').toggleClass('slided');
       return $('.bw-toggle').toggleClass('active');
     });
-    // Fix table lengths
+    // Dynamic Tables
     return $('.bw-front table').each(function() {
       var canvas, ctx, font, length, longest;
       // Find longest
