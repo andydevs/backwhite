@@ -59,35 +59,6 @@
         }
     }
 
-    .bw-back-header {
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid;
-        margin: $spacing-unit 0pt;
-
-        .bw-back-title {
-            flex: 1;
-            margin: 0;
-            font-size: $large-font-size;
-            @include on-mobile {
-                font-size: $large-font-size-m;
-            };
-        }
-
-        .bw-goforth {
-            flex: 0;
-            background: none;
-            border: none;
-            color: inherit;
-            padding: $spacing-unit/2;
-            margin: $spacing-unit/2;
-            display: none;
-            @include on-mobile {
-                display: inline-block;
-            }
-        }
-    }
-
     // Links
     .bw-links {
         a {

@@ -39,29 +39,6 @@
         transition: opacity 0.5s ease-in-out; }
         .bw-back .bw-back-container.visible {
           opacity: 1; } }
-  .bw-back .bw-back-header {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid;
-    margin: 8pt 0pt; }
-    .bw-back .bw-back-header .bw-back-title {
-      flex: 1;
-      margin: 0;
-      font-size: 20pt; }
-      @media only screen and (max-width: 760px) {
-        .bw-back .bw-back-header .bw-back-title {
-          font-size: 20pt; } }
-    .bw-back .bw-back-header .bw-goforth {
-      flex: 0;
-      background: none;
-      border: none;
-      color: inherit;
-      padding: 4pt;
-      margin: 4pt;
-      display: none; }
-      @media only screen and (max-width: 760px) {
-        .bw-back .bw-back-header .bw-goforth {
-          display: inline-block; } }
   .bw-back .bw-links a {
     text-decoration: none; }
     .bw-back .bw-links a:hover {
@@ -109,24 +86,6 @@
     margin-left: 8pt;
     margin-right: 8pt;
     padding: 8pt; }
-  .bw-front .bw-front-header {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid;
-    margin: 8pt 0pt; }
-    .bw-front .bw-front-header .bw-front-title {
-      flex: 1;
-      margin: 0; }
-    .bw-front .bw-front-header .bw-goback {
-      flex: 0;
-      background: none;
-      border: none;
-      padding: 4pt;
-      margin: 4pt;
-      display: none; }
-      @media only screen and (max-width: 760px) {
-        .bw-front .bw-front-header .bw-goback {
-          display: inline-block; } }
 
 * {
   font-family: "Calibri Light", "Arial", sans-serif;
@@ -202,7 +161,7 @@ table {
 pre {
   background-color: #333;
   color: #fff;
-  box-shadow: inset 0px 2px 8px 4px black;
+  box-shadow: inset 0px 0pt 8pt black;
   border-radius: 5pt;
   padding: 8pt;
   display: block;
@@ -219,7 +178,7 @@ code {
 blockquote {
   background-color: #333;
   color: #fff;
-  box-shadow: inset 0px 2px 8px 4px black;
+  box-shadow: inset 0px 0pt 8pt black;
   border-radius: 5pt;
   padding: 8pt;
   display: block;
@@ -238,6 +197,30 @@ blockquote {
   @media only screen and (max-width: 760px) {
     blockquote {
       font-size: 14pt; } }
+
+.bw-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid;
+  margin: 8pt 0pt; }
+  .bw-header .bw-title {
+    flex: 1;
+    margin: 0;
+    font-size: 20pt; }
+    @media only screen and (max-width: 760px) {
+      .bw-header .bw-title {
+        font-size: 20pt; } }
+  .bw-header .bw-action {
+    flex: 0;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 4pt;
+    margin: 4pt;
+    display: none; }
+    @media only screen and (max-width: 760px) {
+      .bw-header .bw-action {
+        display: inline-block; } }
 
 .bw-row {
   display: grid;
@@ -303,7 +286,7 @@ blockquote {
 .bw-rec-button {
   background-color: #333;
   color: #fff;
-  box-shadow: inset 0px 2px 8px 4px black;
+  box-shadow: inset 0px 0pt 8pt black;
   border-radius: 5pt;
   padding: 8pt;
   border: none;
