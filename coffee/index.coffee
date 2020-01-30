@@ -5,19 +5,13 @@
 # Author:  Anshul Kharbanda
 # Created: 7 - 15 - 2018
 $ ->
-    $('.bw-goback').click ->
+    # Menu button handling
+    $('.bw-open').click ->
         $('.bw-back-container').addClass 'visible'
         $('.bw-front').addClass 'slided'
-
-    $('.bw-goforth').click ->
+    $('.bw-close').click ->
         $('.bw-back-container').removeClass 'visible'
         $('.bw-front').removeClass 'slided'
-
-    # Menu button handling
-    $('.bw-toggle').click ->
-        $('.bw-back-container').toggleClass 'visible'
-        $('.bw-front').toggleClass 'slided'
-        $('.bw-toggle').toggleClass 'active'
 
     # Dynamic Tables
     $('.bw-front table').each ->
