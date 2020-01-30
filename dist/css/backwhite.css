@@ -153,8 +153,7 @@
       font-size: 11pt; } }
 
 body {
-  overflow-x: hidden;
-  overscroll-behavior-y: none; }
+  overflow-x: hidden; }
 
 a {
   color: inherit;
