@@ -15,7 +15,6 @@
     background-color: $back-color;
     color: $white-color;
     box-shadow: inset 0px 0pt 8pt darken($back-color, 33%);
-    border-radius: $border-radius;
     padding: $spacing-unit;
 }
 @mixin big-back-boi {
