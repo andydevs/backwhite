@@ -35,16 +35,19 @@ module.exports = function(grunt) {
             options: {
                 livereload: true
             },
-            files: {
-                files: ['scss/**/*.scss', 'coffee/**/*.coffee'],
-                tasks: ['build']
+            coffee: {
+                files: ['coffee/**/*.coffee'],
+                tasks: ['coffee']
+            },
+            scss: {
+                files: ['scss/**/*.scss'],
+                tasks: ['sass']
             }
         }
     })
 
     // Load tasks
     grunt.loadNpmTasks('grunt-sass')
-    grunt.loadNpmTasks('grunt-contrib-copy')
     grunt.loadNpmTasks('grunt-contrib-coffee')
     grunt.loadNpmTasks('grunt-contrib-watch')
 
