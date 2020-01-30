@@ -45,4 +45,24 @@
         margin-right: $spacing-unit;
         padding: $spacing-unit;
     }
+
+    .bw-front-header {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid;
+        margin: $spacing-unit 0pt;
+
+        .bw-front-title {
+            flex: 1;
+            margin: 0;
+        }
+
+        .bw-goback {
+            flex: 0;
+            background: none;
+            border: none;
+            padding: $spacing-unit/2;
+            margin: $spacing-unit/2;
+        }
+    }
 }

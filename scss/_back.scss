@@ -59,17 +59,29 @@
         }
     }
 
-    // Title
-    .bw-title {
-        display: block;
-        text-decoration: none;
+    .bw-back-header {
+        display: flex;
+        align-items: center;
         border-bottom: 1px solid;
-        padding-bottom: 2pt;
         margin: $spacing-unit 0pt;
-        font-size: $large-font-size;
-        @include on-mobile {
-            font-size: $large-font-size-m;
-        };
+
+        .bw-back-title {
+            flex: 1;
+            margin: 0;
+            font-size: $large-font-size;
+            @include on-mobile {
+                font-size: $large-font-size-m;
+            };
+        }
+
+        .bw-goforth {
+            flex: 0;
+            background: none;
+            border: none;
+            color: inherit;
+            padding: $spacing-unit/2;
+            margin: $spacing-unit/2;
+        }
     }
 
     // Links

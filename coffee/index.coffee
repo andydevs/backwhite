@@ -5,6 +5,14 @@
 # Author:  Anshul Kharbanda
 # Created: 7 - 15 - 2018
 $ ->
+    $('.bw-goback').click ->
+        $('.bw-back-container').addClass 'visible'
+        $('.bw-front').addClass 'slided'
+
+    $('.bw-goforth').click ->
+        $('.bw-back-container').removeClass 'visible'
+        $('.bw-front').removeClass 'slided'
+
     # Menu button handling
     $('.bw-toggle').click ->
         $('.bw-back-container').toggleClass 'visible'

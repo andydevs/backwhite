@@ -6,6 +6,14 @@
   // Author:  Anshul Kharbanda
   // Created: 7 - 15 - 2018
   $(function() {
+    $('.bw-goback').click(function() {
+      $('.bw-back-container').addClass('visible');
+      return $('.bw-front').addClass('slided');
+    });
+    $('.bw-goforth').click(function() {
+      $('.bw-back-container').removeClass('visible');
+      return $('.bw-front').removeClass('slided');
+    });
     // Menu button handling
     $('.bw-toggle').click(function() {
       $('.bw-back-container').toggleClass('visible');

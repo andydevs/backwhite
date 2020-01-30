@@ -88,16 +88,25 @@
         transition: opacity 0.5s ease-in-out; }
         .bw-back .bw-back-container.visible {
           opacity: 1; } }
-  .bw-back .bw-title {
-    display: block;
-    text-decoration: none;
+  .bw-back .bw-back-header {
+    display: flex;
+    align-items: center;
     border-bottom: 1px solid;
-    padding-bottom: 2pt;
-    margin: 8pt 0pt;
-    font-size: 20pt; }
-    @media only screen and (max-width: 760px) {
-      .bw-back .bw-title {
-        font-size: 20pt; } }
+    margin: 8pt 0pt; }
+    .bw-back .bw-back-header .bw-back-title {
+      flex: 1;
+      margin: 0;
+      font-size: 20pt; }
+      @media only screen and (max-width: 760px) {
+        .bw-back .bw-back-header .bw-back-title {
+          font-size: 20pt; } }
+    .bw-back .bw-back-header .bw-goforth {
+      flex: 0;
+      background: none;
+      border: none;
+      color: inherit;
+      padding: 4pt;
+      margin: 4pt; }
   .bw-back .bw-links a {
     text-decoration: none; }
     .bw-back .bw-links a:hover {
@@ -145,6 +154,20 @@
     margin-left: 8pt;
     margin-right: 8pt;
     padding: 8pt; }
+  .bw-front .bw-front-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    margin: 8pt 0pt; }
+    .bw-front .bw-front-header .bw-front-title {
+      flex: 1;
+      margin: 0; }
+    .bw-front .bw-front-header .bw-goback {
+      flex: 0;
+      background: none;
+      border: none;
+      padding: 4pt;
+      margin: 4pt; }
 
 * {
   font-family: "Calibri Light", "Arial", sans-serif;
@@ -169,8 +192,6 @@ h1, h2, h3, h4 {
 
 h1 {
   display: block;
-  padding-bottom: 2pt;
-  border-bottom: 1px solid;
   font-size: 20pt; }
   @media only screen and (max-width: 760px) {
     h1 {
