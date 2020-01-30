@@ -46,8 +46,8 @@
     }
 }
 
-.bw-rec-button {
-    @include back-boi;
+.bw-cutout-button {
+    @include cutout;
     border: none;
     display: inline-block;
     transition: box-shadow 0.5s;

@@ -37,6 +37,7 @@ $max-width: 1200px;
 // Imports
 @import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "mixins";
 @import "back";
 @import "front";
 @import "base";

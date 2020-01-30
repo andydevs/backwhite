@@ -11,14 +11,14 @@
 }
 
 // Back bois
-@mixin back-boi {
+@mixin cutout {
     background-color: $back-color;
     color: $white-color;
     box-shadow: inset 0px 0pt 8pt darken($back-color, 33%);
     padding: $spacing-unit;
 }
-@mixin big-back-boi {
-    @include back-boi;
+@mixin big-cutout {
+    @include cutout;
     display: block;
     margin: 0;
     margin-top: $spacing-unit;
