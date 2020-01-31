@@ -4798,7 +4798,7 @@ img {
         width: 100%;
         border: none;
         background: none;
-        border-radius: 0;
+        border-radius: 0pt;
         border-bottom: 1px solid;
         border-color: inherit;
         color: inherit; }
@@ -4809,7 +4809,7 @@ img {
         width: 100%;
         border: none;
         background: none;
-        border-radius: 0;
+        border-radius: 0pt;
         background-color: inherit;
         border-bottom: 1px solid;
         border-color: inherit;
