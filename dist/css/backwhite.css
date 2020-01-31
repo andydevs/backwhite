@@ -4801,7 +4801,8 @@ img {
         border-radius: 0pt;
         border-bottom: 1px solid;
         border-color: inherit;
-        color: inherit; }
+        color: inherit;
+        -webkit-appearance: none; }
         .bw-form .bw-form-row .bw-input-group input:focus {
           outline: none; }
       .bw-form .bw-form-row .bw-input-group select {
@@ -4813,7 +4814,8 @@ img {
         background-color: inherit;
         border-bottom: 1px solid;
         border-color: inherit;
-        color: inherit; }
+        color: inherit;
+        -webkit-appearance: none; }
         .bw-form .bw-form-row .bw-input-group select:focus {
           outline: none; }
     .bw-form .bw-form-row .bw-checkbox-group {
