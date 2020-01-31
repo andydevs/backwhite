@@ -1,6 +1,3 @@
-// Font awesome config
-$fa-font-path: "../fonts";
-
 // Colors
 $back-color: rgb(34, 16, 16);
 $white-color: #fff;
@@ -34,6 +31,9 @@ $font-family: "Calibri Light", sans-serif;
 $mobile-width: 760px;
 $max-width: 1200px;
 
+// Font awesome config
+$fa-font-path: "../fonts";
+
 // Imports
 @import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
@@ -41,4 +41,5 @@ $max-width: 1200px;
 @import "back";
 @import "front";
 @import "base";
-@import "custom";
+@import "form";
+@import "misc";

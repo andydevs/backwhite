@@ -4616,6 +4616,113 @@ img {
   max-width: 100%;
   box-shadow: 0px 0pt 8pt #ababab; }
 
+.bw-form {
+  display: block;
+  background-color: inherit; }
+  .bw-form .bw-form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: inherit; }
+
+.bw-inline-form {
+  margin: 4pt 0pt;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: inherit;
+  color: inherit; }
+  .bw-inline-form .bw-input-group {
+    flex: 1;
+    padding: 0;
+    margin: 4pt 0pt;
+    color: inherit; }
+    .bw-inline-form .bw-input-group input {
+      height: 100%; }
+  .bw-inline-form .bw-button-group {
+    flex: 0;
+    padding: 0;
+    margin: 4pt 0pt;
+    color: inherit; }
+    .bw-inline-form .bw-button-group button {
+      height: 100%;
+      background: none;
+      border: none;
+      border-bottom: 1px solid;
+      padding: 4pt;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      color: inherit; }
+      .bw-inline-form .bw-button-group button * {
+        margin: 0pt 4pt;
+        color: inherit; }
+
+.bw-input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 4pt;
+  background-color: inherit; }
+  .bw-input-group label {
+    flex-grow: 1;
+    display: block;
+    font-size: 8pt;
+    color: inherit; }
+  .bw-input-group input {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    border-radius: 0pt;
+    border-bottom: 1px solid;
+    border-color: inherit;
+    background-color: inherit;
+    color: inherit;
+    -webkit-appearance: none; }
+    .bw-input-group input:focus {
+      outline: none; }
+  .bw-input-group select {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    background-color: inherit;
+    border-radius: 0pt;
+    background-color: inherit;
+    border-bottom: 1px solid;
+    border-color: inherit;
+    color: inherit;
+    -webkit-appearance: none; }
+    .bw-input-group select:focus {
+      outline: none; }
+
+.bw-checkbox-group {
+  padding: 8pt 4pt;
+  display: inline-flex;
+  align-items: center;
+  background-color: inherit;
+  color: inherit; }
+  .bw-checkbox-group label {
+    margin-right: 4pt;
+    font-size: small;
+    color: inherit; }
+  .bw-checkbox-group input[type="checkbox"] {
+    margin: 0;
+    margin-left: 4pt; }
+
+.bw-file-group {
+  flex: 1;
+  padding: 4pt;
+  background-color: inherit; }
+
+.bw-button-group {
+  flex: 1;
+  padding: 4pt;
+  text-align: right; }
+
 .bw-header {
   display: flex;
   align-items: center;
@@ -4753,95 +4860,6 @@ img {
   display: block;
   width: 100%;
   border-bottom: 1px solid; }
-
-.bw-search {
-  margin: 8pt 0pt;
-  display: flex; }
-  .bw-search input[name="q"] {
-    flex-grow: 1;
-    padding: 4pt;
-    background-color: inherit;
-    color: inherit;
-    border: none;
-    border-bottom: 1px solid;
-    border-radius: 0pt; }
-  .bw-search button[type="submit"] {
-    flex-grow: 0;
-    background-color: inherit;
-    color: inherit;
-    border: none;
-    border-bottom: 1px solid;
-    border-color: inherit;
-    border-radius: 0pt; }
-
-.bw-form {
-  background-color: inherit; }
-  .bw-form .bw-form-row {
-    display: flex;
-    flex-direction: row;
-    background-color: inherit;
-    align-items: stretch; }
-    .bw-form .bw-form-row .bw-input-group {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      justify-content: space-between;
-      padding: 4pt;
-      background-color: inherit; }
-      .bw-form .bw-form-row .bw-input-group label {
-        flex-grow: 1;
-        display: block;
-        font-size: 8pt;
-        color: inherit; }
-      .bw-form .bw-form-row .bw-input-group input {
-        display: block;
-        width: 100%;
-        border: none;
-        background: none;
-        border-radius: 0pt;
-        border-bottom: 1px solid;
-        border-color: inherit;
-        background-color: inherit;
-        color: inherit;
-        -webkit-appearance: none; }
-        .bw-form .bw-form-row .bw-input-group input:focus {
-          outline: none; }
-      .bw-form .bw-form-row .bw-input-group select {
-        display: block;
-        width: 100%;
-        border: none;
-        background: none;
-        background-color: inherit;
-        border-radius: 0pt;
-        background-color: inherit;
-        border-bottom: 1px solid;
-        border-color: inherit;
-        color: inherit;
-        -webkit-appearance: none; }
-        .bw-form .bw-form-row .bw-input-group select:focus {
-          outline: none; }
-    .bw-form .bw-form-row .bw-checkbox-group {
-      padding: 8pt 4pt;
-      display: inline-flex;
-      align-items: center;
-      background-color: inherit;
-      color: inherit; }
-      .bw-form .bw-form-row .bw-checkbox-group label {
-        margin-right: 4pt;
-        font-size: small;
-        color: inherit; }
-      .bw-form .bw-form-row .bw-checkbox-group input[type="checkbox"] {
-        margin: 0;
-        margin-left: 4pt; }
-    .bw-form .bw-form-row .bw-file-group {
-      flex: 1;
-      padding: 4pt;
-      background-color: inherit; }
-    .bw-form .bw-form-row .bw-button-group {
-      flex: 1;
-      padding: 4pt;
-      text-align: right; }
 
 .bw-thumbnail {
   max-width: 200px;
