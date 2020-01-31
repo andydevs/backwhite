@@ -4801,6 +4801,7 @@ img {
         border-radius: 0pt;
         border-bottom: 1px solid;
         border-color: inherit;
+        background-color: inherit;
         color: inherit;
         -webkit-appearance: none; }
         .bw-form .bw-form-row .bw-input-group input:focus {
@@ -4810,6 +4811,7 @@ img {
         width: 100%;
         border: none;
         background: none;
+        background-color: inherit;
         border-radius: 0pt;
         background-color: inherit;
         border-bottom: 1px solid;
