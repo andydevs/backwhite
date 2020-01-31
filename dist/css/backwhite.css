@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Consolas";
+  font-size: normal;
+  font-weight: normal;
+  src: url("../fonts/consolas.ttf"); }
+
 /*!
  * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -4527,33 +4533,29 @@ h1, h2, h3, h4 {
 h1 {
   display: block;
   font-size: 20pt; }
-  @media only screen and (max-width: 760px) {
-    h1 {
-      font-size: 20pt; } }
 
 h2 {
+  display: block;
   font-size: 14pt; }
-  @media only screen and (max-width: 760px) {
-    h2 {
-      font-size: 14pt; } }
 
 h3 {
+  display: block;
   font-size: 14pt; }
-  @media only screen and (max-width: 760px) {
-    h3 {
-      font-size: 14pt; } }
 
 p {
+  display: block;
   margin-top: 8pt;
   margin-bottom: 8pt; }
 
 ul {
+  display: block;
   list-style: none; }
   ul > li:before {
     content: "-";
     margin-right: 8pt; }
 
 ol {
+  display: block;
   list-style: lower-roman; }
 
 table {
@@ -4587,7 +4589,8 @@ pre {
   overflow-x: auto; }
 
 code {
-  font-family: monospace;
+  font-family: "Consolas", monospace;
+  font-size: 11pt;
   font-weight: 500; }
 
 blockquote {

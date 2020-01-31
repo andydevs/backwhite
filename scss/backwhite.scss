@@ -26,6 +26,7 @@ $small-font-size-m: 8pt;
 
 // Font
 $font-family: "Calibri Light", sans-serif;
+$code-font-family: "Consolas", monospace;
 
 // Responsive sizes
 $mobile-width: 760px;
@@ -33,6 +34,14 @@ $max-width: 1200px;
 
 // Font awesome config
 $fa-font-path: "../fonts";
+
+// Import consolas font
+@font-face {
+    font-family: "Consolas";
+    font-size: normal;
+    font-weight: normal;
+    src: url('../fonts/consolas.ttf');
+}
 
 // Imports
 @import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
