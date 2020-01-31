@@ -4429,7 +4429,7 @@ readers do not read off random characters that represent icons */
   left: 0%;
   bottom: 0%;
   width: 300px;
-  background-color: #333;
+  background-color: #221010;
   border-color: #fff;
   color: #fff;
   text-align: right; }
@@ -4483,7 +4483,7 @@ readers do not read off random characters that represent icons */
   transition: none;
   background-color: #fff;
   color: black;
-  border-color: #333;
+  border-color: #221010;
   box-shadow: -2pt 0pt 8pt black; }
   .bw-front.slided {
     transform: none; }
@@ -4515,13 +4515,13 @@ body {
 
 a {
   color: inherit;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #221010;
   text-decoration: none; }
   a:hover {
     border-bottom: none; }
 
 h1, h2, h3, h4 {
-  color: #333;
+  color: #221010;
   margin: 8pt 0pt; }
 
 h1 {
@@ -4562,12 +4562,12 @@ table {
   padding: 0pt;
   border-spacing: 0; }
   table th {
-    color: #333; }
+    color: #221010; }
   table th, table td {
     margin: 0pt;
     padding: 8pt;
     text-align: center;
-    border-bottom: 0.5pt solid #333;
+    border-bottom: 0.5pt solid #221010;
     overflow: hidden; }
   table th:last-child, table td:last-child {
     border-right: none; }
@@ -4575,7 +4575,7 @@ table {
     border-bottom: none; }
 
 pre {
-  background-color: #333;
+  background-color: #221010;
   color: #fff;
   box-shadow: inset 0px 0pt 8pt black;
   padding: 8pt;
@@ -4591,7 +4591,7 @@ code {
   font-weight: 500; }
 
 blockquote {
-  background-color: #333;
+  background-color: #221010;
   color: #fff;
   box-shadow: inset 0px 0pt 8pt black;
   padding: 8pt;
@@ -4612,6 +4612,9 @@ blockquote {
     blockquote {
       font-size: 14pt; } }
 
+img {
+  max-width: 100%; }
+
 .bw-header {
   display: flex;
   align-items: center;
@@ -4620,7 +4623,8 @@ blockquote {
   .bw-header .bw-title {
     flex: 1;
     margin: 0;
-    font-size: 20pt; }
+    font-size: 20pt;
+    color: inherit; }
     @media only screen and (max-width: 760px) {
       .bw-header .bw-title {
         font-size: 20pt; } }
@@ -4630,11 +4634,13 @@ blockquote {
     border: none;
     color: inherit;
     padding: 4pt;
-    margin: 4pt;
-    display: none; }
-    @media only screen and (max-width: 760px) {
-      .bw-header .bw-action {
-        display: inline-block; } }
+    margin: 4pt; }
+
+.bw-show-on-mobile {
+  display: none; }
+  @media only screen and (max-width: 760px) {
+    .bw-show-on-mobile {
+      display: inline-block; } }
 
 .bw-row {
   display: grid;
@@ -4697,8 +4703,15 @@ blockquote {
       .bw-row .bw-col-11 {
         grid-column-start: span 11; } }
 
+.bw-text-button {
+  border: none;
+  background: none;
+  display: inline-block;
+  color: inherit;
+  padding: 8pt; }
+
 .bw-cutout-button {
-  background-color: #333;
+  background-color: #221010;
   color: #fff;
   box-shadow: inset 0px 0pt 8pt black;
   padding: 8pt;
@@ -4707,6 +4720,28 @@ blockquote {
   transition: box-shadow 0.5s; }
   .bw-cutout-button:hover {
     box-shadow: none; }
+
+.bw-raised-button {
+  background-color: #fff;
+  color: #221010;
+  box-shadow: 0px 0pt 8pt black;
+  padding: 8pt;
+  border: none;
+  display: inline-block;
+  transition: box-shadow 0.5s; }
+  .bw-raised-button:hover {
+    box-shadow: none; }
+
+.bw-cutout {
+  background-color: #221010;
+  color: #fff;
+  box-shadow: inset 0px 0pt 8pt black;
+  padding: 8pt;
+  display: block;
+  margin: 0;
+  margin-top: 8pt;
+  margin-bottom: 8pt;
+  padding: 16pt; }
 
 .bw-horiz-scroll-wrapper {
   display: block;
@@ -4737,5 +4772,68 @@ blockquote {
     border-bottom: 1px solid;
     border-color: inherit;
     border-radius: 0pt; }
+
+.bw-form {
+  background-color: inherit; }
+  .bw-form .bw-form-row {
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    align-items: stretch; }
+    .bw-form .bw-form-row .bw-input-group {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+      padding: 4pt;
+      background-color: inherit; }
+      .bw-form .bw-form-row .bw-input-group label {
+        flex-grow: 1;
+        display: block;
+        font-size: 8pt;
+        color: inherit; }
+      .bw-form .bw-form-row .bw-input-group input {
+        display: block;
+        width: 100%;
+        border: none;
+        background: none;
+        border-bottom: 1px solid;
+        border-color: inherit;
+        color: inherit; }
+        .bw-form .bw-form-row .bw-input-group input:focus {
+          outline: none; }
+      .bw-form .bw-form-row .bw-input-group select {
+        display: block;
+        width: 100%;
+        border: none;
+        background: none;
+        background-color: inherit;
+        border-bottom: 1px solid;
+        border-color: inherit;
+        color: inherit; }
+        .bw-form .bw-form-row .bw-input-group select:focus {
+          outline: none; }
+    .bw-form .bw-form-row .bw-checkbox-group {
+      padding: 8pt 4pt;
+      display: inline-flex;
+      align-items: center;
+      background-color: inherit;
+      color: inherit; }
+      .bw-form .bw-form-row .bw-checkbox-group label {
+        margin-right: 4pt;
+        font-size: small;
+        color: inherit; }
+      .bw-form .bw-form-row .bw-checkbox-group input[type="checkbox"] {
+        margin: 0;
+        margin-left: 4pt; }
+    .bw-form .bw-form-row .bw-file-group {
+      flex: 1;
+      padding: 4pt;
+      background-color: inherit; }
+    .bw-form .bw-form-row .bw-button-group {
+      flex: 1;
+      padding: 4pt;
+      text-align: right; }
 
 /*# sourceMappingURL=backwhite.css.map */
