@@ -17,7 +17,7 @@
     box-shadow: inset 0px 0pt 8pt darken($back-color, 33%);
     padding: $spacing-unit;
 }
-@mixin big-cutout {
+@mixin block-cutout {
     @include cutout;
     display: block;
     margin: 0;

@@ -83,7 +83,7 @@ table {
 }
 
 pre {
-    @include big-cutout;
+    @include block-cutout;
     overflow-x: auto;
 }
 
@@ -93,7 +93,7 @@ code {
 }
 
 blockquote {
-    @include big-cutout;
+    @include block-cutout;
 
     // Font
     font-size: $medium-font-size;
