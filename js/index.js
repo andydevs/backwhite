@@ -11,7 +11,7 @@ import $ from 'jquery';
 $(() => {
     // Menu button handling
     $('.bw-open').click(() => {
-        $('.bw-back-container').show()
+        $('.bw-back-container').addClass('visible')
         $('.bw-front').animate(
             {'margin-left': '100%'},
             400, 'swing')
@@ -20,7 +20,7 @@ $(() => {
         $('.bw-front').animate(
             {'margin-left': '0%'},
             400, 'swing',
-            () => $('.bw-back-container').hide())
+            () => $('.bw-back-container').removeClass('visible'))
     })
 
     // Dynamic Tables

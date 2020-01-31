@@ -4450,11 +4450,15 @@ readers do not read off random characters that represent icons */
     display: block;
     padding: 8pt;
     margin: 0; }
+    .bw-back .bw-back-container.visible {
+      display: block; }
     @media only screen and (max-width: 760px) {
       .bw-back .bw-back-container {
         margin-left: 8pt;
         margin-right: 8pt;
-        display: none; } }
+        display: none; }
+        .bw-back .bw-back-container.visible {
+          display: block; } }
   .bw-back .bw-links a {
     text-decoration: none; }
     .bw-back .bw-links a:hover {

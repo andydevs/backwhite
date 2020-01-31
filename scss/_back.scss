@@ -38,6 +38,9 @@
         // Text align
         text-align: right;
         display: block;
+        &.visible {
+            display: block;
+        }
 
         // Padding
         padding: $spacing-unit;
@@ -46,6 +49,9 @@
             margin-left: $spacing-unit;
             margin-right: $spacing-unit;
             display: none;
+            &.visible {
+                display: block;
+            }
         }
     }
 

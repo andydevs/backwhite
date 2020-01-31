@@ -104,7 +104,7 @@ __webpack_require__.r(__webpack_exports__);
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
   // Menu button handling
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.bw-open').click(function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.bw-back-container').show();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.bw-back-container').addClass('visible');
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.bw-front').animate({
       'margin-left': '100%'
     }, 400, 'swing');
@@ -113,7 +113,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.bw-front').animate({
       'margin-left': '0%'
     }, 400, 'swing', function () {
-      return jquery__WEBPACK_IMPORTED_MODULE_0___default()('.bw-back-container').hide();
+      return jquery__WEBPACK_IMPORTED_MODULE_0___default()('.bw-back-container').removeClass('visible');
     });
   }); // Dynamic Tables
 
