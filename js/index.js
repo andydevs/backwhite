@@ -24,13 +24,13 @@ $(() => {
     })
 
     // Dynamic Tables
-    $('.bw-front table').each(() => {
+    $('.bw-front table').each(function() {
         // Find longest
         let longest = $(this)
             .find('th,td')
-            .map(() => $(this).text())
+            .map((_, elem) => $(elem).text())
             .get()
-            .reduce((a, b) => a.length >= b.length ? a : b, -Infinity)
+            .reduce((a, b) => a.length >= b.length ? a : b, '')
 
         // Get length of longest
         let font = $(this).find('td').css('font')

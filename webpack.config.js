@@ -11,6 +11,7 @@ const path = require('path');
 // Export webpack configuration
 module.exports = {
     mode: 'none',
+    devtool: 'source-map',
     entry: './js/index.js',
     output: {
         path: path.resolve(__dirname, 'dist/js/'),

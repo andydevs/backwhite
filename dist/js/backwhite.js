@@ -92,8 +92,6 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-var _this = undefined;
-
 /**
  * Backwhite
  *
@@ -121,19 +119,19 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
 
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.bw-front table').each(function () {
     // Find longest
-    var longest = jquery__WEBPACK_IMPORTED_MODULE_0___default()(_this).find('th,td').map(function () {
-      return jquery__WEBPACK_IMPORTED_MODULE_0___default()(_this).text();
+    var longest = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).find('th,td').map(function (_, elem) {
+      return jquery__WEBPACK_IMPORTED_MODULE_0___default()(elem).text();
     }).get().reduce(function (a, b) {
       return a.length >= b.length ? a : b;
-    }, -Infinity); // Get length of longest
+    }, ''); // Get length of longest
 
-    var font = jquery__WEBPACK_IMPORTED_MODULE_0___default()(_this).find('td').css('font');
+    var font = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).find('td').css('font');
     var canvas = document.createElement('canvas');
     var ctx = canvas.getContext('2d');
     ctx.font = font;
     var length = ctx.measureText(longest).width; // Set table cell lengths to length of longest
 
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(_this).find('th,td').css('width', length);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).find('th,td').css('width', length);
   });
 });
 
@@ -10744,3 +10742,4 @@ return jQuery;
 
 /***/ })
 /******/ ]);
+//# sourceMappingURL=backwhite.js.map
