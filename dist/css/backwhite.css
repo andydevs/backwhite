@@ -4439,9 +4439,6 @@ readers do not read off random characters that represent icons */
   border-color: #fff;
   color: #fff;
   text-align: right; }
-  @media only screen and (min-width: 1200px) {
-    .bw-back {
-      width: 300px; } }
   @media only screen and (max-width: 760px) {
     .bw-back {
       top: 0%;
@@ -4469,9 +4466,6 @@ readers do not read off random characters that represent icons */
     color: #bfbfbf;
     text-align: justify;
     font-size: 8pt; }
-    @media only screen and (max-width: 760px) {
-      .bw-back .bw-footer {
-        font-size: 8pt; } }
     .bw-back .bw-footer p {
       text-align: justify; }
 
@@ -4512,9 +4506,6 @@ readers do not read off random characters that represent icons */
 * {
   font-family: "Calibri Light", sans-serif;
   font-size: 11pt; }
-  @media only screen and (max-width: 760px) {
-    * {
-      font-size: 11pt; } }
 
 body {
   overflow-x: hidden; }
@@ -4611,9 +4602,6 @@ blockquote {
   margin-top: 8pt;
   margin-bottom: 8pt;
   padding: 16pt; }
-  @media only screen and (max-width: 760px) {
-    blockquote {
-      font-size: 14pt; } }
 
 img {
   max-width: 100%;
@@ -4736,9 +4724,6 @@ img {
     margin: 0;
     font-size: 20pt;
     color: inherit; }
-    @media only screen and (max-width: 760px) {
-      .bw-header .bw-title {
-        font-size: 20pt; } }
   .bw-header .bw-action {
     flex: 0;
     background: none;

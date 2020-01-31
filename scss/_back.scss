@@ -25,11 +25,6 @@
     // Align text
     text-align: right;
 
-    // Resize on max
-    @include on-max {
-        width: $desktop-menu-size-x;
-    };
-
     // Fill entire screen on mobile
     @include on-mobile {
         top: 0%;
@@ -74,11 +69,6 @@
         color: darken($white-color, 25%);
         text-align: justify;
         font-size: $small-font-size;
-        @include on-mobile {
-            font-size: $small-font-size-m;
-        };
-        p {
-            text-align: justify;
-        }
+        p { text-align: justify; }
     }
 }

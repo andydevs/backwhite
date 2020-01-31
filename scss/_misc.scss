@@ -9,9 +9,6 @@
         flex: 1;
         margin: 0;
         font-size: $large-font-size;
-        @include on-mobile {
-            font-size: $large-font-size-m;
-        };
         color: inherit;
     }
 
