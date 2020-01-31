@@ -125,7 +125,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
       return jquery__WEBPACK_IMPORTED_MODULE_0___default()(_this).text();
     }).get().reduce(function (a, b) {
       return a.length >= b.length ? a : b;
-    }); // Get length of longest
+    }, -Infinity); // Get length of longest
 
     var font = jquery__WEBPACK_IMPORTED_MODULE_0___default()(_this).find('td').css('font');
     var canvas = document.createElement('canvas');

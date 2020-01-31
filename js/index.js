@@ -30,7 +30,7 @@ $(() => {
             .find('th,td')
             .map(() => $(this).text())
             .get()
-            .reduce((a, b) => a.length >= b.length ? a : b)
+            .reduce((a, b) => a.length >= b.length ? a : b, -Infinity)
 
         // Get length of longest
         let font = $(this).find('td').css('font')

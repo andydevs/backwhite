@@ -50,7 +50,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch')
 
     // Register tasks
-    grunt.registerTask('build', ['webpack', 'sass', 'copy'])
+    grunt.registerTask('build', ['webpack', 'sass'])
     grunt.registerTask('build:watch', ['build', 'watch'])
     grunt.registerTask('default', ['build'])
 }
