@@ -4447,17 +4447,14 @@ readers do not read off random characters that represent icons */
       width: 100%; } }
   .bw-back .bw-back-container {
     text-align: right;
-    transition: none;
+    display: block;
     padding: 8pt;
     margin: 0; }
     @media only screen and (max-width: 760px) {
       .bw-back .bw-back-container {
         margin-left: 8pt;
         margin-right: 8pt;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out; }
-        .bw-back .bw-back-container.visible {
-          opacity: 1; } }
+        display: none; } }
   .bw-back .bw-links a {
     text-decoration: none; }
     .bw-back .bw-links a:hover {
@@ -4480,21 +4477,16 @@ readers do not read off random characters that represent icons */
   right: 0%;
   overflow-y: hidden;
   overflow-x: hidden;
-  transition: none;
   background-color: #fff;
   color: black;
   border-color: #221010;
   box-shadow: -2pt 0pt 8pt black; }
-  .bw-front.slided {
-    transform: none; }
   @media only screen and (max-width: 760px) {
     .bw-front {
       top: 0%;
       left: 0%;
       right: 0%;
-      transition: margin-left 0.5s ease-in-out; }
-      .bw-front.slided {
-        margin-left: 100%; } }
+      margin-left: 0%; } }
   .bw-front .bw-front-container {
     margin-left: 8pt;
     margin-right: 8pt;

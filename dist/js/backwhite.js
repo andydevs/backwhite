@@ -8,12 +8,17 @@
   $(function() {
     // Menu button handling
     $('.bw-open').click(function() {
-      $('.bw-back-container').addClass('visible');
-      return $('.bw-front').addClass('slided');
+      $('.bw-back-container').show();
+      return $('.bw-front').animate({
+        'margin-left': '100%'
+      }, 400, 'swing');
     });
     $('.bw-close').click(function() {
-      $('.bw-back-container').removeClass('visible');
-      return $('.bw-front').removeClass('slided');
+      return $('.bw-front').animate({
+        'margin-left': '0%'
+      }, 400, 'swing', function() {
+        return $('.bw-back-container').hide();
+      });
     });
     // Dynamic Tables
     return $('.bw-front table').each(function() {

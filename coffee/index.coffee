@@ -7,11 +7,17 @@
 $ ->
     # Menu button handling
     $('.bw-open').click ->
-        $('.bw-back-container').addClass 'visible'
-        $('.bw-front').addClass 'slided'
+        $('.bw-back-container').show()
+        $('.bw-front').animate(
+            {'margin-left': '100%'},
+            400,
+            'swing')
     $('.bw-close').click ->
-        $('.bw-back-container').removeClass 'visible'
-        $('.bw-front').removeClass 'slided'
+        $('.bw-front').animate(
+            {'margin-left': '0%'},
+            400,
+            'swing',
+            -> $('.bw-back-container').hide())
 
     # Dynamic Tables
     $('.bw-front table').each ->

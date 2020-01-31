@@ -37,8 +37,7 @@
     .bw-back-container {
         // Text align
         text-align: right;
-
-        transition: none;
+        display: block;
 
         // Padding
         padding: $spacing-unit;
@@ -46,11 +45,7 @@
         @include on-mobile {
             margin-left: $spacing-unit;
             margin-right: $spacing-unit;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-            &.visible {
-                opacity: 1;
-            }
+            display: none;
         }
     }
 
