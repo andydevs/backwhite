@@ -7,6 +7,7 @@
  * Created: 7 - 15 - 2018
  */
 const sass = require('node-sass')
+const webpackConfig = require('./webpack.config.js')
 
 /**
  * Configure grunt
@@ -15,11 +16,8 @@ const sass = require('node-sass')
  */
 module.exports = function(grunt) {
     grunt.initConfig({
-        coffee: {
-            compile: {
-                src: ['coffee/**/*.coffee'],
-                dest: 'dist/js/backwhite.js'
-            }
+        webpack: {
+            config: webpackConfig
         },
         sass: {
             options: {
@@ -31,21 +29,13 @@ module.exports = function(grunt) {
                 dest: 'dist/css/backwhite.css'
             }
         },
-        copy: {
-            main: {
-                expand: true,
-                cwd: './node_modules/@fortawesome/fontawesome-free/webfonts',
-                src: ['*'],
-                dest: 'dist/fonts'
-            }
-        },
         watch: {
             options: {
                 livereload: true
             },
-            coffee: {
-                files: ['coffee/**/*.coffee'],
-                tasks: ['coffee']
+            webpack: {
+                files: ['js/**/*.js'],
+                tasks: ['webpack']
             },
             scss: {
                 files: ['scss/**/*.scss'],
@@ -56,12 +46,11 @@ module.exports = function(grunt) {
 
     // Load tasks
     grunt.loadNpmTasks('grunt-sass')
-    grunt.loadNpmTasks('grunt-contrib-copy')
-    grunt.loadNpmTasks('grunt-contrib-coffee')
+    grunt.loadNpmTasks('grunt-webpack')
     grunt.loadNpmTasks('grunt-contrib-watch')
 
     // Register tasks
-    grunt.registerTask('build', ['coffee', 'sass', 'copy'])
+    grunt.registerTask('build', ['webpack', 'sass', 'copy'])
     grunt.registerTask('build:watch', ['build', 'watch'])
     grunt.registerTask('default', ['build'])
 }
