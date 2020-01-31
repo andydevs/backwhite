@@ -1,3 +1,11 @@
+// Hide on desktop, show on mobile
+.bw-show-on-mobile {
+    display: none;
+    @include on-mobile {
+        display: inline-block;
+    }
+}
+
 // Basic header with action button availability
 .bw-header {
     display: flex;
@@ -19,13 +27,6 @@
         color: inherit;
         padding: $spacing-unit/2;
         margin: $spacing-unit/2;
-    }
-}
-
-.bw-show-on-mobile {
-    display: none;
-    @include on-mobile {
-        display: inline-block;
     }
 }
 

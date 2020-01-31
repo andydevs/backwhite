@@ -4487,9 +4487,6 @@ readers do not read off random characters that represent icons */
   box-shadow: -2pt 0pt 8pt black; }
   .bw-front.slided {
     transform: none; }
-  @media only screen and (min-width: 1200px) {
-    .bw-front {
-      left: 300px; } }
   @media only screen and (max-width: 760px) {
     .bw-front {
       top: 0%;
@@ -4714,6 +4711,12 @@ img {
   padding: 4pt;
   text-align: right; }
 
+.bw-show-on-mobile {
+  display: none; }
+  @media only screen and (max-width: 760px) {
+    .bw-show-on-mobile {
+      display: inline-block; } }
+
 .bw-header {
   display: flex;
   align-items: center;
@@ -4731,12 +4734,6 @@ img {
     color: inherit;
     padding: 4pt;
     margin: 4pt; }
-
-.bw-show-on-mobile {
-  display: none; }
-  @media only screen and (max-width: 760px) {
-    .bw-show-on-mobile {
-      display: inline-block; } }
 
 .bw-row {
   display: grid;

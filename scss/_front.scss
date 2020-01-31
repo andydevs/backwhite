@@ -23,9 +23,6 @@
     box-shadow: -2pt 0pt 8pt darken($back-color, 33%);
 
     // Mobile
-    @include on-max {
-        left: $desktop-menu-size-x;
-    };
     @include on-mobile {
         // Positioning
         top: 0%;
