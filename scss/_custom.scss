@@ -1,3 +1,4 @@
+// Basic header with action button availability
 .bw-header {
     display: flex;
     align-items: center;
@@ -50,6 +51,7 @@
     }
 }
 
+// Custom buttons
 .bw-text-button {
     border: none;
     background: none;
@@ -76,6 +78,7 @@
     }
 }
 
+// Cutout section (appears as a recessed section that uses the back color)
 .bw-cutout {
     @include big-cutout;
 }
@@ -210,4 +213,10 @@
             text-align: right;
         }
     }
+}
+
+// Thumbnail image
+.bw-thumbnail {
+    max-width: 200px;
+    max-height: 200px;
 }

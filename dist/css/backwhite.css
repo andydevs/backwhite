@@ -4613,7 +4613,8 @@ blockquote {
       font-size: 14pt; } }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  box-shadow: 0px 0pt 8pt #ababab; }
 
 .bw-header {
   display: flex;
@@ -4841,5 +4842,9 @@ img {
       flex: 1;
       padding: 4pt;
       text-align: right; }
+
+.bw-thumbnail {
+  max-width: 200px;
+  max-height: 200px; }
 
 /*# sourceMappingURL=backwhite.css.map */
