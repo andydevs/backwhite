@@ -4570,7 +4570,8 @@ pre {
   margin-top: 8pt;
   margin-bottom: 8pt;
   padding: 16pt;
-  overflow-x: auto; }
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
 
 code {
   font-family: "Consolas", monospace;
@@ -4835,7 +4836,8 @@ img {
 .bw-horiz-scroll-wrapper {
   display: block;
   width: 100%;
-  overflow-x: auto; }
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
 
 .bw-horiz-rule {
   display: block;
