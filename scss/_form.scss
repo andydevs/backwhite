@@ -78,7 +78,11 @@
 }
 
 .bw-input-group {
-    // Scale to fill space
+    // Scale to fill space 
+    // (apparantly, the element was not shrinking, 
+    // it was being forced to have an input of 1,
+    // so we add "auto" to tell it that it grows to
+    // 1 fraction, but it can scale down if need be)
     flex: 1 auto;
 
     // Internal spacing
