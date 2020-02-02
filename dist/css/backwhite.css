@@ -4646,7 +4646,7 @@ img {
         color: inherit; }
 
 .bw-input-group {
-  flex: 1;
+  flex: 1 auto;
   padding: 4pt;
   display: flex;
   flex-direction: column;

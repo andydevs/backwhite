@@ -79,7 +79,7 @@
 
 .bw-input-group {
     // Scale to fill space
-    flex: 1;
+    flex: 1 auto;
 
     // Internal spacing
     padding: $spacing-unit/2;
