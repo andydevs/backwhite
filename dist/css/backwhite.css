@@ -4603,15 +4603,16 @@ img {
 
 .bw-form {
   display: block;
-  background-color: inherit; }
+  background-color: inherit;
+  color: inherit; }
   .bw-form .bw-form-row {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    background-color: inherit; }
+    background-color: inherit;
+    color: inherit; }
 
 .bw-inline-form {
-  margin: 4pt 0pt;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -4619,8 +4620,9 @@ img {
   color: inherit; }
   .bw-inline-form .bw-input-group {
     flex: 1;
-    padding: 0;
     margin: 4pt 0pt;
+    padding: 0;
+    background-color: inherit;
     color: inherit; }
     .bw-inline-form .bw-input-group input {
       height: 100%; }
@@ -4645,19 +4647,17 @@ img {
 
 .bw-input-group {
   flex: 1;
+  padding: 4pt;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 4pt;
   background-color: inherit; }
   .bw-input-group label {
-    flex-grow: 1;
     display: block;
     font-size: 8pt;
     color: inherit; }
   .bw-input-group input {
     display: block;
-    width: 100%;
     border: none;
     background: none;
     border-radius: 0pt;
@@ -4670,7 +4670,6 @@ img {
       outline: none; }
   .bw-input-group select {
     display: block;
-    width: 100%;
     border: none;
     background: none;
     background-color: inherit;
