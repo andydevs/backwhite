@@ -4656,8 +4656,9 @@ img {
     display: block;
     font-size: 8pt;
     color: inherit; }
-  .bw-input-group input {
+  .bw-input-group input, .bw-input-group select {
     display: block;
+    width: 100%;
     border: none;
     background: none;
     border-radius: 0pt;
@@ -4666,20 +4667,7 @@ img {
     background-color: inherit;
     color: inherit;
     -webkit-appearance: none; }
-    .bw-input-group input:focus {
-      outline: none; }
-  .bw-input-group select {
-    display: block;
-    border: none;
-    background: none;
-    background-color: inherit;
-    border-radius: 0pt;
-    background-color: inherit;
-    border-bottom: 1px solid;
-    border-color: inherit;
-    color: inherit;
-    -webkit-appearance: none; }
-    .bw-input-group select:focus {
+    .bw-input-group input:focus, .bw-input-group select:focus {
       outline: none; }
 
 .bw-checkbox-group {

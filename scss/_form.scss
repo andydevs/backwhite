@@ -103,9 +103,12 @@
         color: inherit;
     }
 
-    input {
+    input, select {
         // Vertical block
         display: block;
+
+        // Set width to containing unit
+        width: 100%;
 
         // Style input field
         border: none;
@@ -123,23 +126,6 @@
         &:focus {
             outline: none;
         };
-    }
-
-    select {
-        display: block;
-
-        border: none;
-        background: none;
-        background-color: inherit;
-        border-radius: 0pt;
-        background-color: inherit;
-        border-bottom: 1px solid;
-        border-color: inherit;
-        color: inherit;
-        -webkit-appearance: none;
-        &:focus {
-            outline: none;
-        }
     }
 }
 
