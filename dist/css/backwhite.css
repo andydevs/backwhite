@@ -4659,10 +4659,10 @@ img {
   .bw-input-group input, .bw-input-group select {
     display: block;
     width: 100% !important;
-    box-sizing: content-box;
-    -ms-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     border: none;
     background: none;
     border-radius: 0pt;
