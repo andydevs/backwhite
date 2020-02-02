@@ -110,6 +110,13 @@
         // Set width to containing unit
         width: 100%;
 
+        // So apparently the sizing on these is just that 
+        // little bit off, because it uses different sizing...
+        box-sizing:content-box;
+        -ms-box-sizing:content-box;
+        -moz-box-sizing:content-box;
+        -webkit-box-sizing:content-box;
+
         // Style input field
         border: none;
         background: none;
