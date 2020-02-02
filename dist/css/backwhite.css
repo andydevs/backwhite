@@ -4658,7 +4658,7 @@ img {
     color: inherit; }
   .bw-input-group input, .bw-input-group select {
     display: block;
-    width: 100%;
+    width: 100% !important;
     box-sizing: content-box;
     -ms-box-sizing: content-box;
     -moz-box-sizing: content-box;

@@ -108,7 +108,7 @@
         display: block;
 
         // Set width to containing unit
-        width: 100%;
+        width: 100% !important;
 
         // So apparently the sizing on these is just that 
         // little bit off, because it uses different sizing...
