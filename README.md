@@ -4,15 +4,15 @@ Simple sophisticated styling for blogs and other content-based sites.
 
 _Desktop View_
 
-![Desktop View](./desktop.png)
+![Desktop View](./doc-images/desktop.png)
 
 _Mobile Page_
 
-![Mobile Page View](./mobile-page.png)
+![Mobile Page View](./doc-images/mobile-page.png)
 
 _Mobile Menu_
 
-![Mobile Menu View](./mobile-menu.png)
+![Mobile Menu View](./doc-images/mobile-menu.png)
 
 ## Installation
 
@@ -35,7 +35,7 @@ These panels are created with `<div class='bw-back'>` and `<div class='bw-front>
 </div>
 ```
 
-![Back Front Panel](./back-front-panels.png)
+![Back Front Panel](./doc-images/back-front-panels.png)
 
 ### Headers
 
