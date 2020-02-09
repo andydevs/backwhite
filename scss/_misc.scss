@@ -38,12 +38,11 @@
     grid-column-gap: 8pt;
 
     // Create grid columns
-    $col-class-slug: bw-col !default;
     @for $i from 1 to 12 {
-        .#{$col-class-slug}-#{$i} {
-            grid-column-start: span 12;
-            @include on-max {
-                grid-column-start: span $i;
+        .bw-col-#{$i} {
+            grid-column-start: span $i;
+            @include on-tablet {
+                grid-column-start: span 12;
             };
         }
     }
