@@ -4450,7 +4450,7 @@ readers do not read off random characters that represent icons */
   left: 0%;
   bottom: 0%;
   width: 300px;
-  background-color: #221010;
+  background-color: #333;
   border-color: #fff;
   color: #fff;
   text-align: right; }
@@ -4498,7 +4498,7 @@ readers do not read off random characters that represent icons */
   overflow-x: hidden;
   color: black;
   background-color: #fff;
-  border-color: #221010;
+  border-color: #333;
   box-shadow: -2pt 0pt 8pt black; }
   @media only screen and (max-width: 760px) {
     .bw-front {
@@ -4518,13 +4518,13 @@ body {
 
 a {
   color: inherit;
-  border-bottom: 1px solid #221010;
+  border-bottom: 1px solid #333;
   text-decoration: none; }
   a:hover {
     border-bottom: none; }
 
 h1, h2, h3, h4 {
-  color: #221010;
+  color: #333;
   margin: 8pt 0pt; }
 
 h1 {
@@ -4561,12 +4561,12 @@ table {
   padding: 0pt;
   border-spacing: 0; }
   table th {
-    color: #221010; }
+    color: #333; }
   table th, table td {
     margin: 0pt;
     padding: 8pt;
     text-align: center;
-    border-bottom: 0.5pt solid #221010;
+    border-bottom: 0.5pt solid #333;
     overflow: hidden; }
   table th:last-child, table td:last-child {
     border-right: none; }
@@ -4574,7 +4574,7 @@ table {
     border-bottom: none; }
 
 pre {
-  background-color: #221010;
+  background-color: #333;
   color: #fff;
   box-shadow: inset 0px 0pt 8pt black;
   padding: 8pt;
@@ -4592,7 +4592,7 @@ code {
   font-weight: 500; }
 
 blockquote {
-  background-color: #221010;
+  background-color: #333;
   color: #fff;
   box-shadow: inset 0px 0pt 8pt black;
   padding: 8pt;
@@ -4804,7 +4804,7 @@ img {
   padding: 8pt; }
 
 .bw-cutout-button {
-  background-color: #221010;
+  background-color: #333;
   color: #fff;
   box-shadow: inset 0px 0pt 8pt black;
   padding: 8pt;
@@ -4816,7 +4816,7 @@ img {
 
 .bw-raised-button {
   background-color: #fff;
-  color: #221010;
+  color: #333;
   box-shadow: 0px 0pt 8pt black;
   padding: 8pt;
   border: none;
@@ -4826,7 +4826,7 @@ img {
     box-shadow: none; }
 
 .bw-cutout {
-  background-color: #221010;
+  background-color: #333;
   color: #fff;
   box-shadow: inset 0px 0pt 8pt black;
   padding: 8pt;
