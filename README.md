@@ -35,9 +35,11 @@ These panels are created with `<div class='bw-back'>` and `<div class='bw-front>
 </div>
 ```
 
+![Back Front Panel](./back-front-panel.png)
+
 ### Headers
 
-Both on the back and the front panel in the example have headers at the top. Headers have a title and a series of actions (usually icon buttons). The order of the html controls the order of the elements.
+Both the back and the front panel in the example have headers at the top. Headers have a title and a series of actions (usually icon buttons). The order of the html controls the order of the elements.
 
 Backwhite comes with fontawesome solid and brand icons. Use them just like you would in any other app.
 
