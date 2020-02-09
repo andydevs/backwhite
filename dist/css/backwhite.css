@@ -4511,11 +4511,9 @@ readers do not read off random characters that represent icons */
     margin-right: 8pt;
     padding: 8pt; }
 
-* {
-  font-family: "Calibri Light", sans-serif;
-  font-size: 11pt; }
-
 body {
+  font-family: "Calibri Light", sans-serif;
+  font-size: 11pt;
   overflow-x: hidden; }
 
 a {
