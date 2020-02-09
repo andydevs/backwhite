@@ -35,7 +35,7 @@ These panels are created with `<div class='bw-back'>` and `<div class='bw-front>
 </div>
 ```
 
-![Back Front Panel](./back-front-panel.png)
+![Back Front Panel](./back-front-panels.png)
 
 ### Headers
 
