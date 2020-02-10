@@ -758,3 +758,17 @@ $desktop-menu-size: 500px;
 ![Menu Size 500](./doc-images/menu-500.png)
 
 #### Responsiveness
+
+To change the breakpoints when we switch to mobile styling, use `$mobile-width`
+
+```scss
+$mobile-width: 760px; // Default
+```
+
+![Default Responsive](./doc-images/default-resp.png)
+
+```scss
+$mobile-width: 900px;
+```
+
+![Responsive 900](./doc-images/resp-900.png)
