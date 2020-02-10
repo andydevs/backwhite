@@ -143,7 +143,60 @@ _Mobile Menu_
 
 ### Back Menu Links
 
+Links are organized on the back menu using a table.
+
+```html
+<table class="bw-links">
+    <tr>
+        <td><a href='#'>About</a></td>
+        <td><a href='#'>Contact</a></td>
+        <td><a href='#'>Post of the Day</a></td>
+    </tr>
+    <tr>
+        <td><a href='#'>Web Design</a></td>
+        <td><a href='#'>Hardware</a></td>
+        <td><a href='#'>Machine Learning</a></td>
+    </tr>
+    <tr>
+        <td>
+            <a href="#">
+                <span class="fab fa-youtube"></span> Youtube
+            </a>
+        </td>
+        <td>
+            <a href="#">
+                <span class="fab fa-github"></span> Github
+            </a>
+        </td>
+        <td>
+            <a href="#">
+                <span class="fab fa-linkedin"></span> Linkedin
+            </a>
+        </td>
+    </tr>
+</table>
+```
+
+![Header Links](./doc-images/header-links.png)
+
 ### Back Menu Footer
+
+The footer goes in the back menu within a div with the class `.bw-footer`.
+
+```html
+<div class="bw-footer">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+        laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate 
+        velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in 
+        culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+```
+
+![Header Links Footer](./doc-images/header-links-footer.png)
 
 ### Responsive Tables
 
