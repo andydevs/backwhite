@@ -80,7 +80,7 @@ This is an example of a header in the front panel.
 
 ![Front Header](./doc-images/front-header.png)
 
-The order of the html controls the order of the elements. This is an example of a header in the back panel.
+This is an example of a header in the back panel.
 
 ```html
 <div class='bw-header'>
@@ -100,6 +100,47 @@ _More content will be added below soon_
 
 ### Controlling Mobile Sliding
 
+The front and back usually start with main headers. These are what will contain the buttons controlling the sliding on mobile. The front panel header would usually contain the title of the page. The back panel header would contain the title of the site. On each of these there would be one button which handles opening and closing.
+
+```html
+<body>
+    <div class="bw-back">
+        <div class="bw-back-container">
+            <div class='bw-header'>
+                <button class="bw-action bw-show-on-mobile bw-close">
+                    <span class="fas fa-chevron-left"></span>
+                </button>
+                <h1 class='bw-title'>Example Header</h1>
+            </div>
+        </div>
+    </div>
+    <div class="bw-front">
+        <div class="bw-front-container">
+            <div class='bw-header'>
+                <h1 class='bw-title'>Example Header</h1>
+                <button class="bw-action bw-show-on-mobile bw-open">
+                    <span class="fas fa-chevron-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+```
+
+_Desktop_
+
+![Header Desktop](./doc-images/header-desktop.png)
+
+_Mobile Page_
+
+![Header Mobile Page](./doc-images/header-mobile-page.png)
+
+_Mobile Menu_
+
+![Header Mobile Menu](./doc-images/header-mobile-menu.png)
+
+`.bw-show-on-mobile` will hide the button on desktop and show it on mobile. `.bw-open` and `.bw-close` are preprogrammed classes which trigger the opening and closing of the menu respectively when clicked. Font awesone's chevron icons are being used here.
+
 ### Back Menu Links
 
 ### Back Menu Footer
@@ -107,6 +148,8 @@ _More content will be added below soon_
 ### Responsive Tables
 
 ### Cutouts
+
+### Buttons
 
 ### Forms
 
