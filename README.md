@@ -16,7 +16,18 @@ _Mobile Menu_
 
 ## Installation
 
-Just type `npm install backwhite --save` in your node project
+Just type `npm install backwhite --save` in your node project.
+
+In your html page, import the css and js files.
+
+```html
+<head>
+    <!-- ... -->
+
+    <link rel='sylesheet' href='[path-to-module]/dist/css/backwhite.css'/>
+    <script src='[path-to-module]/dist/js/backwhite.js' charset='utf-8'></script>
+</head>
+```
 
 ## Usage
 
@@ -24,7 +35,7 @@ Just type `npm install backwhite --save` in your node project
 
 The core of this design is the back panel (appearing on the right on desktop, and appearing behind on mobile), and the front panel.
 
-These panels are created with `<div class='bw-back'>` and `<div class='bw-front>` respectively.
+These panels are created with `<div class='bw-back'>` and `<div class='bw-front'>` respectively.
 
 ```html
 <body>
