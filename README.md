@@ -654,11 +654,12 @@ Now, just import the compiled main.css file in your html
 
 The main theme color is controlled by the `$back-color` variable. Changing this changes the entire coloring of the page! Usually this should be a dark color, so to not clash with the white background.
 
+
 ```scss
-$back-color: #333;
+$back-color: #333; // Default
 ```
 
-![Back Color is #333](./doc-images/back-color-333.png)
+![Default](./doc-images/default.png)
 
 ```scss
 $back-color: #331616;
@@ -673,6 +674,26 @@ $back-color: #163318;
 ![Back Color is #163318](./doc-images/back-color-163318.png)
 
 #### Spacing
+
+Spacing is controlled by `$spacing-unit`.
+
+```scss
+$spacing-unit: 8pt; // Default
+```
+
+![Default](./doc-images/default.png)
+
+```scss
+$spacing-unit: 4pt;
+```
+
+![Spacing Unit is 4pt](./doc-images/spacing-unit-4pt.png)
+
+```scss
+$spacing-unit: 16pt;
+```
+
+![Spacing Unit is 16pt](./doc-images/spacing-unit-16pt.png)
 
 #### Fonts
 
