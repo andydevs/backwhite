@@ -338,9 +338,288 @@ Backwhite provides three button types. `.bw-text-button` is a button formatted s
 
 #### Block Forms
 
+Backwhite Forms are created with the `bw-form` class.
+
+```html
+<form class='bw-form' action='...'>
+
+</form>
+```
+
+Form entries are organized into rows (in a div called `.bw-form-row`). Each of these rows contain one or more input fields. An input field is actually a group containing a label and an input, contained in a `.bw-input-group`. This handles coupling the input and label and styling them as a single entity. Input groups are automatically scaled to fill the width of the row (using flexbox). 
+
+```html
+<div class="bw-form-row">
+    <div class="bw-input-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" name="first-name">
+    </div>
+
+    <div class="bw-input-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" name="last-name">
+    </div>
+</div>
+```
+
+`.bw-input-group` also works for selects.
+
+```html
+<div class="bw-input-group">
+    <label for="race">Race:</label>
+    <select name="race">
+        <option disabled selected>Select...</option>
+        <option value="caucasian">Caucasian</option>
+        <option value="african-afam">African/African American</option>
+        <option value="asian-pac">Asian/Pacific Islander</option>
+    </select>
+</div>
+```
+
+Checkbox and file inputs are special and use `.bw-checkbox-group` and `.bw-file-group` respectively. 
+
+```html
+<div class="bw-checkbox-group">
+    <label for="hispanic-latino">Hispanic/Latino</label>
+    <input type="checkbox" name="hispanic-latino">
+</div>
+
+...
+
+<div class="bw-file-group">
+    <label for="upload">Upload File:</label>
+    <input type="file" name="upload">
+</div>
+```
+
+At the bottom, `.bw-button-group` will contain form buttons (this should be contained in it's own `.bw-form-row`).
+
+```html
+<div class="bw-form-row">
+    <div class="bw-button-group">
+        <button class="bw-text-button" type="reset">Reset</button>
+        <button class="bw-cutout-button" type="submit">Submit</button>
+    </div>
+</div>
+```
+
+Here's an example of an entire form:
+
+```html
+<h2>Form</h2>
+<form class="bw-form" action="#">
+    <div class="bw-form-row">
+        <div class="bw-input-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name">
+        </div>
+
+        <div class="bw-input-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name">
+        </div>
+    </div>
+
+    <div class="bw-form-row">
+        <div class="bw-input-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email">
+        </div>
+    </div>
+
+    <div class="bw-form-row">
+        <div class="bw-input-group">
+            <label for="password">Password:</label>
+            <input type="password" name="password">
+        </div>
+
+        <div class="bw-input-group">
+            <label for="verify">Verify Password:</label>
+            <input type="password" name="verify">
+        </div>
+    </div>
+
+    <div class="bw-form-row">
+        <div class="bw-input-group">
+            <label for="age">Age:</label>
+            <input type="number" name="age">
+        </div>
+
+        <div class="bw-input-group">
+            <label for="gender">Gender:</label>
+            <select name="gender">
+                <option disabled selected>Select...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="nonbinary">Non-Binary</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="bw-form-row">
+        <div class="bw-input-group">
+            <label for="race">Race:</label>
+            <select name="race">
+                <option disabled selected>Select...</option>
+                <option value="caucasian">Caucasian</option>
+                <option value="african-afam">African/African American</option>
+                <option value="asian-pac">Asian/Pacific Islander</option>
+            </select>
+        </div>
+
+        <div class="bw-checkbox-group">
+            <label for="hispanic-latino">Hispanic/Latino</label>
+            <input type="checkbox" name="hispanic-latino">
+        </div>
+    </div>
+
+    <div class="bw-form-row">
+        <div class="bw-checkbox-group">
+            <label for="active-veteran">Active Military or Veteran</label>
+            <input type="checkbox" name="active-veteran">
+        </div>
+    </div>
+
+    <div class="bw-form-row">
+        <div class="bw-file-group">
+            <label for="upload">Upload File:</label>
+            <input type="file" name="upload">
+        </div>
+    </div>
+
+    <div class="bw-form-row">
+        <div class="bw-button-group">
+            <button class="bw-text-button" type="reset">Reset</button>
+            <button class="bw-cutout-button" type="submit">Submit</button>
+        </div>
+    </div>
+</form>
+```
+
+![Block Form](./doc-images/block-form.png)
+
 #### Cutout Forms
 
+You can also make a form in a cutout. Remember to use `.bw-raised-button` in this form in place of `.bw-cutout-button`.
+
+```html
+<div class="bw-cutout">
+    <div class="bw-header">
+        <h3 class="bw-title">Cutout Form</h3>
+    </div>
+
+    <form class="bw-form" action="#">
+        <div class="bw-form-row">
+            <div class="bw-input-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name">
+            </div>
+
+            <div class="bw-input-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last-name">
+            </div>
+        </div>
+
+        <div class="bw-form-row">
+            <div class="bw-input-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+            </div>
+        </div>
+
+        <div class="bw-form-row">
+            <div class="bw-input-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password">
+            </div>
+
+            <div class="bw-input-group">
+                <label for="verify">Verify Password:</label>
+                <input type="password" name="verify">
+            </div>
+        </div>
+
+        <div class="bw-form-row">
+            <div class="bw-input-group">
+                <label for="age">Age:</label>
+                <input type="number" name="age">
+            </div>
+
+            <div class="bw-input-group">
+                <label for="gender">Gender:</label>
+                <select name="gender">
+                    <option disabled selected>Select...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="nonbinary">Non-Binary</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="bw-form-row">
+            <div class="bw-input-group">
+                <label for="race">Race:</label>
+                <select name="race">
+                    <option disabled selected>Select...</option>
+                    <option value="caucasian">Caucasian</option>
+                    <option value="african-afam">African/African American</option>
+                    <option value="asian-pac">Asian/Pacific Islander</option>
+                </select>
+            </div>
+
+            <div class="bw-checkbox-group">
+                <label for="hispanic-latino">Hispanic/Latino</label>
+                <input type="checkbox" name="hispanic-latino">
+            </div>
+        </div>
+
+        <div class="bw-form-row">
+            <div class="bw-checkbox-group">
+                <label for="active-veteran">Active Military or Veteran</label>
+                <input type="checkbox" name="active-veteran">
+            </div>
+        </div>
+
+        <div class="bw-form-row">
+            <div class="bw-file-group">
+                <label for="upload">Upload File:</label>
+                <input type="file" name="upload">
+            </div>
+        </div>
+
+        <div class="bw-form-row">
+            <div class="bw-button-group">
+                <button class="bw-text-button" type="reset">Reset</button>
+                <button class="bw-raised-button" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+```
+
+![Cutout Form](./doc-images/cutout-form.png)
+
 #### Inline Forms
+
+Forms can also take up one row. These are created by `.bw-inline-form`. Buttons in this form are automatically pushed to the right (or left depending on ordering) and are automatically formatted. For example, a search bar:
+
+```html
+<form class="bw-inline-form" action="#">
+    <div class="bw-input-group">
+        <label for="q">Search</label>
+        <input type="text" name="q">
+    </div>
+    <div class="bw-button-group">
+        <button type="submit">
+            <span class="fas fa-search"></span>
+                Search
+        </button>
+    </div>
+</form>
+```
+
+![Inline Form](./doc-images/inline-form.png)
 
 ### Customization
 
