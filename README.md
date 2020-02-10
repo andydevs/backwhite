@@ -697,6 +697,39 @@ $spacing-unit: 16pt;
 
 #### Fonts
 
+The main font is controlled with `$font-family`.
+
+```scss
+$font-family: "Calibri Light", sans-serif; // Default
+```
+
+![Default](./doc-images/default.png)
+
+```scss
+$font-family: "Verdana", sans-serif;
+```
+
+![Font Family Verdana](./doc-images/font-family-verdana.png)
+
+Code font is controlled by `$code-font-family`.
+
+```scss
+$code-font-family: "Consolas", monospace; // Default
+```
+
+![Code Default](./doc-images/code-default.png)
+
+_Consolas is provided with Backwhite_
+
+```scss
+$code-font-family: "Monaco", monospace;
+```
+
+![Code Monaco](./doc-images/code-monaco.png)
+
+
 #### Font Scales
 
-#### Controlling Responsiveness
+#### Layout
+
+#### Responsiveness
