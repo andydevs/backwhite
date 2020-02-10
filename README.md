@@ -252,6 +252,74 @@ Tables are scaled so that every cell is as wide as the widest text cell. This me
 
 ### Cutouts
 
+Another part that backwhite styling provides is cutouts. A cutout is a special emphasised part of the document that appears cut out from the front part, using the back as it's background.
+
+```html
+<div class="bw-cutout">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Curabitur quis urna nec lorem finibus mattis vel et odio. 
+        Ut lectus nunc, accumsan eu mi in, finibus dapibus felis. 
+        Morbi feugiat laoreet turpis ut sollicitudin. Donec id metus 
+        metus. Etiam vestibulum vitae dolor eu finibus. Vivamus in 
+        urna vitae purus fringilla porttitor vel sed nisi. Maecenas 
+        accumsan sapien vitae lectus tincidunt, ac maximus elit dapibus. 
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
+        posuere cubilia Curae;</p>
+</div>
+```
+
+![Cutout](./doc-images/cutout.png)
+
+You can add headers to cutouts as well
+
+```html
+<div class="bw-cutout">
+    <div class="bw-header">
+        <h3 class="bw-title">Cutout Title</h3>
+        <button class="bw-action">
+            <span class="fas fa-plus"></span>
+        </button>
+        <button class="bw-action">
+            <span class="fas fa-trash"></span>
+        </button>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Curabitur quis urna nec lorem finibus mattis vel et odio. 
+        Ut lectus nunc, accumsan eu mi in, finibus dapibus felis. 
+        Morbi feugiat laoreet turpis ut sollicitudin. Donec id metus 
+        metus. Etiam vestibulum vitae dolor eu finibus. Vivamus in 
+        urna vitae purus fringilla porttitor vel sed nisi. Maecenas 
+        accumsan sapien vitae lectus tincidunt, ac maximus elit dapibus. 
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
+        posuere cubilia Curae;</p>
+</div>
+```
+
+![Cutout Header](./doc-images/cutout-header.png)
+
+Blockquotes and pre/code sections are automatically formatted as cutouts
+
+```html
+<blockquote>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi 
+    officia ipsum optio illum. Sunt fugiat nemo veritatis tempora 
+    voluptas ea laudantium? Explicabo ipsa error distinctio nihil 
+    nostrum exercitationem hic tempora.
+</blockquote>
+```
+
+![Cutout Blockquote](./doc-images/cutout-blockquote.png)
+
+```html
+<pre><code>def myfunction(arg1, arg2):
+    """
+    Docstring for myfunction
+    """
+    return arg1 + arg2, arg1/arg2</code></pre>
+```
+
+![Cutout Code](./doc-images/cutout-code.png)
+
 ### Buttons
 
 ### Forms
