@@ -250,6 +250,8 @@ Tables are scaled so that every cell is as wide as the widest text cell. This me
 
 ![Responsive Table](./doc-images/responsive-table.png)
 
+### Grid Rows
+
 ### Cutouts
 
 Another part that backwhite styling provides is cutouts. A cutout is a special emphasised part of the document that appears cut out from the front part, using the back as it's background.
@@ -730,6 +732,29 @@ $code-font-family: "Monaco", monospace;
 
 #### Font Scales
 
+There are 4 font size variables that control the size of different parts of code.
+
+```scss
+$large-font-size;
+$medium-font-size;
+$normal-font-size;
+$small-font-siz;
+```
+
 #### Layout
+
+On desktop, the width of the side menu is controlled by `$desktop-menu-size`.
+
+```scss
+$desktop-menu-size: 300px; // Default
+```
+
+![Default](./doc-images/default.png)
+
+```scss
+$desktop-menu-size: 500px;
+```
+
+![Menu Size 500](./doc-images/menu-500.png)
 
 #### Responsiveness
