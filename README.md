@@ -200,6 +200,45 @@ The footer goes in the back menu within a div with the class `.bw-footer`.
 
 ### Responsive Tables
 
+Tables are scaled so that every cell is as wide as the widest text cell. This means that the tables will overflow over the edge. In backwhite, these tables are wrapped in a horizontal scroll wrapper div to allow for horizontal scrolling between tables.
+
+```html
+<div class='bw-horiz-scroll-wrapper'>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Town</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Joe</td>
+                <td>22</td>
+                <td>Allentown</td>
+                <td>joe@schmoes.goes</td>
+            </tr>
+            <tr>
+                <td>Jim</td>
+                <td>20</td>
+                <td>Gainsville</td>
+                <td>jim@shims.dims</td>
+            </tr>
+            <tr>
+                <td>Steven</td>
+                <td>32</td>
+                <td>Birmington</td>
+                <td>steven@schmultz.gultz</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+```
+
+![Responsive Table](./doc-images/responsive-table.png)
+
 ### Cutouts
 
 ### Buttons
