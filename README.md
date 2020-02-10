@@ -22,7 +22,7 @@ In your html page, import the css and js files.
 
 ```html
 <head>
-    <!-- ... -->
+    <!-- meta... -->
 
     <link rel='sylesheet' href='[path-to-module]/dist/css/backwhite.css'/>
     <script src='[path-to-module]/dist/js/backwhite.js' charset='utf-8'></script>
@@ -623,9 +623,58 @@ Forms can also take up one row. These are created by `.bw-inline-form`. Buttons 
 
 ### Customization
 
+Backwhite's styling is written in SCSS, with variables determining text size and coloring.
+
+If you're using scss, you can customize Backwhite. In your main scss file, import backwhite's scss.
+
+_main.scss_
+
+```scss
+// Declare variables...
+
+// Import statement
+@import '[path-to-module]/scss/backwhite.scss'
+```
+
+Now, just import the compiled main.css file in your html
+
+```html
+<head>
+    <!-- meta... -->
+
+    <!-- instead of [path-to-module]/dist/css/backwhite.css -->
+    <link rel='sylesheet' href='[path-to-css]/main.css'/>
+
+    <!-- this handles sliding and table responsiveness, so still import this! --->
+    <script src='[path-to-module]/dist/js/backwhite.js' charset='utf-8'></script> 
+</head>
+```
+
 #### Colors
 
+The main theme color is controlled by the `$back-color` variable. Changing this changes the entire coloring of the page! Usually this should be a dark color, so to not clash with the white background.
+
+```scss
+$back-color: #333;
+```
+
+![Back Color is #333](./doc-images/back-color-333.png)
+
+```scss
+$back-color: #331616;
+```
+
+![Back Color is #331616](./doc-images/back-color-331616.png)
+
+```scss
+$back-color: #163318;
+```
+
+![Back Color is #163318](./doc-images/back-color-163318.png)
+
 #### Spacing
+
+#### Fonts
 
 #### Font Scales
 
