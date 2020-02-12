@@ -927,10 +927,10 @@ $code-font-family: "Monaco", monospace;
 There are 4 font size variables that control the size of different parts of code.
 
 ```scss
-$large-font-size;
-$medium-font-size;
-$normal-font-size;
-$small-font-siz;
+$large-font-size; // Controls h1 font size
+$medium-font-size; // Controls h2, h3, h4 font size
+$normal-font-size; // Controls normal font size
+$small-font-size; // Controls footer font size
 ```
 
 #### Layout
