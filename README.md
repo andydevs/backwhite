@@ -951,7 +951,9 @@ $desktop-menu-size: 500px;
 
 #### Responsiveness
 
-To change the breakpoints when we switch to mobile styling, use `$mobile-width`
+##### Mobile
+
+To change the breakpoint when the web app switches to mobile styling, use `$mobile-width`
 
 ```scss
 $mobile-width: 760px; // Default
@@ -964,3 +966,19 @@ $mobile-width: 900px;
 ```
 
 ![Responsive 900](./doc-images/resp-900.png)
+
+##### Tablet
+
+To change the breakpoint when the web app switches to tablet styling, use `$tablet-width`
+
+```scss
+$tablet-width: 1200px; // Default
+```
+
+![Default Responsive Tablet](./doc-images/default-resp-tablet.png)
+
+```scss
+$tablet-width: 1230px;
+```
+
+![Responsive Tablet 1230](./doc-images/resp-tablet-1230.png)
