@@ -4795,6 +4795,11 @@ img {
     @media only screen and (max-width: 1200px) {
       .bw-row .bw-col-11 {
         grid-column-start: span 12; } }
+  .bw-row .bw-col-12 {
+    grid-column-start: span 12; }
+    @media only screen and (max-width: 1200px) {
+      .bw-row .bw-col-12 {
+        grid-column-start: span 12; } }
 
 .bw-text-button {
   border: none;

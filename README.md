@@ -252,6 +252,198 @@ Tables are scaled so that every cell is as wide as the widest text cell. This me
 
 ### Grid Rows
 
+Backwhite supports bootstrap-like grid rows. Each grid row is a `.bw-row` div, and can contain any number of `.bw-col-[x]` divs, where x is any number from 1 to 12. To make a complete row, all x values must add up to exactly 12.
+
+```html
+<h2>Grid Rows</h2>
+
+<div class="bw-row">
+    <div class="bw-col-2">
+        <h3><code>bw-col-2</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum hic nihil, facilis, autem alias eaque iure 
+            provident reiciendis explicabo magnam doloremque 
+            officiis sit officia consequatur adipisci? Omnis 
+            eos eius porro!</p>
+    </div>
+    <div class="bw-col-2">
+        <h3><code>bw-col-2</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum hic nihil, facilis, autem alias eaque iure 
+            provident reiciendis explicabo magnam doloremque 
+            officiis sit officia consequatur adipisci? Omnis 
+            eos eius porro!</p>
+    </div>
+    <div class="bw-col-2">
+        <h3><code>bw-col-2</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum hic nihil, facilis, autem alias eaque iure 
+            provident reiciendis explicabo magnam doloremque 
+            officiis sit officia consequatur adipisci? Omnis 
+            eos eius porro!</p>
+    </div>
+    <div class="bw-col-2">
+        <h3><code>bw-col-2</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum hic nihil, facilis, autem alias eaque iure 
+            provident reiciendis explicabo magnam doloremque 
+            officiis sit officia consequatur adipisci? Omnis 
+            eos eius porro!</p>
+    </div>
+    <div class="bw-col-2">
+        <h3><code>bw-col-2</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum hic nihil, facilis, autem alias eaque iure 
+            provident reiciendis explicabo magnam doloremque 
+            officiis sit officia consequatur adipisci? Omnis 
+            eos eius porro!</p>
+    </div>
+    <div class="bw-col-2">
+        <h3><code>bw-col-2</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum hic nihil, facilis, autem alias eaque iure 
+            provident reiciendis explicabo magnam doloremque 
+            officiis sit officia consequatur adipisci? Omnis 
+            eos eius porro!</p>
+    </div>
+</div>
+
+<div class="bw-row">
+    <div class="bw-col-4">
+        <h3><code>bw-col-4</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum hic nihil, facilis, autem alias eaque iure provident 
+            reiciendis explicabo magnam doloremque officiis sit officia 
+            consequatur adipisci? Omnis eos eius porro!</p>
+    </div>
+    <div class="bw-col-4">
+        <h3><code>bw-col-4</code></h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Tempore unde iure nobis. Quos tempora laudantium beatae, 
+            aliquam repellat praesentium velit eius voluptatum blanditiis 
+            sed ullam! Necessitatibus cupiditate inventore similique voluptatem!</p>
+    </div>
+    <div class="bw-col-4">
+        <h3><code>bw-col-4</code></h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Facilis voluptas natus ipsam voluptatibus aspernatur neque 
+            minima odit ipsum aliquid et? Dolorum corporis distinctio 
+            delectus quidem nesciunt unde non ducimus voluptate?</p>
+    </div>
+</div>
+
+<div class="bw-row">
+    <div class="bw-col-6">
+        <h3><code>bw-col-6</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum hic nihil, facilis, autem alias eaque iure provident 
+            reiciendis explicabo magnam doloremque officiis sit officia 
+            consequatur adipisci? Omnis eos eius porro!</p>
+    </div>
+    <div class="bw-col-6">
+        <h3><code>bw-col-6</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum hic nihil, facilis, autem alias eaque iure provident 
+            reiciendis explicabo magnam doloremque officiis sit officia 
+            consequatur adipisci? Omnis eos eius porro!</p>
+    </div>
+</div>
+
+<div class="bw-row">
+    <div class="bw-col-10">
+        <h3><code>bw-col-10</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum hic nihil, facilis, autem alias eaque iure provident 
+            reiciendis explicabo magnam doloremque officiis sit officia 
+            consequatur adipisci? Omnis eos eius porro! Lorem ipsum dolor 
+            sit, amet consectetur adipisicing elit. Possimus, unde numquam. 
+            Fugiat et, sed beatae mollitia magni dolores omnis deserunt, 
+            inventore dolorem suscipit possimus labore quasi unde temporibus 
+            adipisci ex!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Ad molestiae delectus id accusantium alias molestias aspernatur 
+            animi, unde sequi veritatis. Eveniet est dolorem ullam voluptatum 
+            odio molestias laudantium dolores ea? Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. Adipisci sed, architecto quidem 
+            possimus amet velit voluptas ex eos placeat, iste provident 
+            suscipit at ipsam numquam nobis totam natus veniam aliquid?</p>
+    </div>
+    <div class="bw-col-2">
+        <h3><code>bw-col-2</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum hic nihil, facilis, autem alias eaque iure provident 
+            reiciendis explicabo magnam doloremque officiis sit officia 
+            consequatur adipisci? Omnis eos eius porro!</p>
+    </div>
+</div>
+
+<div class="bw-row">
+    <div class="bw-col-6">
+        <h3><code>bw-col-6</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum hic nihil, facilis, autem alias eaque iure provident 
+            reiciendis explicabo magnam doloremque officiis sit officia 
+            consequatur adipisci? Omnis eos eius porro!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Iure ad aliquam facere. Sequi illum mollitia excepturi enim! 
+            Blanditiis explicabo, libero fugiat asperiores velit magni 
+            voluptatem cumque tempore corporis quia quaerat.</p>
+    </div>
+    <div class="bw-col-2">
+        <h3><code>bw-col-2</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum hic nihil, facilis, autem alias eaque iure provident 
+            reiciendis explicabo magnam doloremque officiis sit officia 
+            consequatur adipisci? Omnis eos eius porro!</p>
+    </div>
+    <div class="bw-col-4">
+        <h3><code>bw-col-4</code></h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Facilis voluptas natus ipsam voluptatibus aspernatur neque 
+            minima odit ipsum aliquid et? Dolorum corporis distinctio 
+            delectus quidem nesciunt unde non ducimus voluptate? Lorem 
+            ipsum dolor sit amet consectetur adipisicing elit. Dolores, 
+            culpa ad in enim earum iste pariatur ratione voluptas esse 
+            ut officia inventore debitis beatae vel dolore odit nam eius. 
+            Culpa.</p>
+    </div>
+</div>
+
+<div class="bw-row">
+    <div class="bw-col-12">
+        <h3><code>bw-col-12</code></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Quis dolor eius iure necessitatibus dolores alias ex pariatur! 
+             Dolores corporis voluptas natus a quos voluptate? Sapiente 
+             laboriosam fugiat possimus velit atque. Lorem ipsum dolor sit amet 
+             consectetur adipisicing elit. Ratione sapiente error, repellat 
+             vel ut distinctio consequatur dolorem quidem molestias nisi 
+             neque nobis eum eligendi aliquam placeat numquam iusto deleniti 
+             aspernatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Vitae numquam quas quaerat? Iusto quaerat exercitationem deleniti 
+             aliquid quas error tempora eligendi necessitatibus eaque, quo quisquam! 
+             Est amet ea natus maiores.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Aut eius laboriosam velit voluptates corrupti illo quia. Autem quos 
+             excepturi dolore praesentium? Aut fuga fugiat praesentium blanditiis 
+             eum et iusto facere! Lorem ipsum dolor sit amet consectetur adipisicing 
+             elit. Quaerat eaque recusandae facilis ut laborum vero repudiandae 
+             consequatur debitis quam adipisci reprehenderit voluptas, velit 
+             praesentium provident, pariatur architecto earum molestias repellendus! 
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam 
+             accusantium id impedit pariatur quae sit vel tenetur. Voluptate 
+             necessitatibus omnis repellat totam eum, quo perspiciatis, ad error 
+             commodi animi quibusdam!</p>
+    </div>
+</div>
+```
+
+![Grid Rows Desktop](./doc-images/grid-rows-desktop.png)
+
+On a tablet (or a smaller laptop screen), and on mobile, the grid rows align vertically.
+
+![Grid Rows Tablet](./doc-images/grid-rows-tablet.png)
+
 ### Cutouts
 
 Another part that backwhite styling provides is cutouts. A cutout is a special emphasised part of the document that appears cut out from the front part, using the back as it's background.
