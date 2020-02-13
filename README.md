@@ -1,3 +1,5 @@
+_Notice: Currently unavailable on npm. Will be back up by around Friday_
+
 # Backwhite
 
 Simple sophisticated styling for blogs and other content-based sites.
