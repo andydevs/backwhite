@@ -1,8 +1,8 @@
-#### v1.0.3
+#### v1.0.4
 
 - Updated changelog
 
-#### v1.0.2
+#### v1.0.3
 
 - Added homepage and documentation to packages
 - Added CHANGELOG
