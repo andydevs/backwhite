@@ -8,10 +8,6 @@
     "build": "grunt build",
     "build:watch": "grunt build:watch"
   },
-  "files": [
-    "USAGE.md",
-    "doc-images/"
-  ],
   "keywords": [
     "style",
     "backwhite"

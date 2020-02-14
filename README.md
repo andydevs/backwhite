@@ -1,7 +1,5 @@
 # Backwhite
 
-_Notice: The install may fail on the `postinstall` due to a `grunt` command which is not included as a dependency. It should be fine to ignore this as the css has already been built prior to publishing the package/repo. This will also be fixed._
-
 Simple sophisticated styling for blogs and other content-based sites.
 
 _Desktop View_

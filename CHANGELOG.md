@@ -1,3 +1,5 @@
+- Removed notice and files...
+
 #### v1.0.4
 
 - Updated changelog
