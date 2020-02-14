@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "Backwhite style",
   "main": "dist/js/backwhite.js",
+  "homepage": "https://www.github.com/andydevs/backwhite#readme",
   "scripts": {
     "postinstall": "npm run build",
     "build": "grunt build",
