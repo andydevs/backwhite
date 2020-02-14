@@ -5,7 +5,6 @@
   "main": "dist/js/backwhite.js",
   "homepage": "https://www.github.com/andydevs/backwhite#readme",
   "scripts": {
-    "postinstall": "npm run build",
     "build": "grunt build",
     "build:watch": "grunt build:watch"
   },
