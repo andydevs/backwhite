@@ -1,8 +1,4 @@
-_Notice: Currently unavailable on npm. Will be back up by around Friday_
-
-_In the mean time. You can use `npm install andydevs/backwhite#1.0.0` to install directly from GitHub_.
-
-_Notice 2: The install may also fail on the `postinstall` due to a `grunt` command which is not included as a dependency. It should be fine to ignore this as the css has already been built prior to publishing the package/repo. This will also be fixed._
+_Notice: The install may fail on the `postinstall` due to a `grunt` command which is not included as a dependency. It should be fine to ignore this as the css has already been built prior to publishing the package/repo. This will also be fixed._
 
 # Backwhite
 

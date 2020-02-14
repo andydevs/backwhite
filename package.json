@@ -1,6 +1,6 @@
 {
   "name": "backwhite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Backwhite style",
   "main": "dist/js/backwhite.js",
   "scripts": {
